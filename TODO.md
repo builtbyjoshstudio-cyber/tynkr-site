@@ -37,22 +37,19 @@ Each form also sends a hidden `app` field (`ledger` / `vault` / `hearth` /
 `forge`; the landing form sends none) so one Formspree form can tell you which
 page the signup came from.
 
-## 2. Real assets (optional — fallback works without them)
+## 2. Social share card — `assets/og-card.png` (OUTSTANDING)
 
-`assets/` is empty. The pages reference:
-- `assets/tynkr-ledger-512.png`, `-vault-`, `-hearth-`, `-forge-`, `-tools-512.png`
-- `assets/og-card.png` (social share image, referenced as an absolute URL)
+The five app icons are **done** — `tynkr-{ledger,vault,hearth,forge,tools}-512.png`
+are in `assets/` and load on every page.
 
-Until these exist, app icons render as a flat colored square with the app's
-initial (built-in JS fallback — confirmed working). Drop the real PNGs in and
-they take over automatically.
+Still missing: **`assets/og-card.png`**, the Open Graph / Twitter share image
+referenced (as an absolute URL) by all five pages. Until it exists, link
+previews on social/chat will show a broken image. Recommended size 1200×630.
+Drop the file in at that path and it just works — no code change needed.
 
-> ⚠️ Note: on the **product pages** the icons are referenced with a *relative*
-> path (`assets/tynkr-forge-512.png`), which resolves to `/forge/assets/…` when
-> served at `/forge/`, not `/assets/…`. The colored-square fallback hides this
-> today, but once real icons are added they won't appear on the product pages
-> unless the paths are made root-relative (`/assets/…`) or copies are placed in
-> each app folder. The landing page (served at `/`) is unaffected.
+> Note: the product-page icon paths were made root-relative (`/assets/…`) at
+> setup, so the real icons load correctly at `/ledger/`, `/vault/`, etc. — not
+> just on the landing page. Nothing further needed there.
 
 ## 3. DNS (custom domain)
 
