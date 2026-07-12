@@ -1,0 +1,10 @@
+# tynkr.builtbyjoshstudio.com — robots.txt
+#
+# Static marketing site for the Tynkr desktop app suite.
+# All content is public and meant to be indexed and cited — search
+# engines and AI crawlers alike get full access. No private paths.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://tynkr.builtbyjoshstudio.com/sitemap.xml

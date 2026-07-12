@@ -1,0 +1,20 @@
+# Tynkr Tools & Co — Desktop App Suite
+
+> Four privacy-first desktop apps for Windows from Built by Josh Studio. Everything lives in flat files on your own machine — no cloud, no accounts, no subscriptions. Buy once, own forever. The suite is in development; visitors can get notified at launch.
+
+Tynkr is the desktop software line from Built by Josh Studio (a one-person creative studio in Kansas, incorporated as Built by Josh Studio LLC in 2026). Each app reads and writes plain files in a folder you choose — open them in any text editor, sync them however you like, or keep them fully offline. The only network request any Tynkr app makes is an optional check for updates, which can be turned off; airplane mode is a supported configuration. All four apps share the same contract: local-first data you own, one-time purchase, no telemetry, no accounts. The apps are not yet released — the marketing site collects launch notifications.
+
+This site (tynkr.builtbyjoshstudio.com) covers the desktop apps only. The broader Built by Josh Studio catalog — Notion OS templates, Excel/Google Sheets workbooks, guided print planners, and zodiac art — lives at builtbyjoshstudio.com.
+
+## The apps
+
+- [Tynkr Ledger — Personal Finance OS](https://tynkr.builtbyjoshstudio.com/ledger/): Personal finance on your own disk — transactions, budgets, bills, debt payoff, and net worth. Local-first Windows app; no cloud, no accounts, no subscription.
+- [Tynkr Vault — Second Brain OS](https://tynkr.builtbyjoshstudio.com/vault/): Notes, tasks, and weekly reviews as plain Markdown files you own, with fuzzy search in milliseconds. Local-first Windows app; no cloud, no accounts, no subscription.
+- [Tynkr Hearth — Homebuyer OS](https://tynkr.builtbyjoshstudio.com/hearth/): The whole home purchase mapped — mortgage math, down-payment planning, cash-to-close, roadmap, and document tracker. Local-first Windows app; no cloud, no accounts.
+- [Tynkr Forge — Small Business OS](https://tynkr.builtbyjoshstudio.com/forge/): Invoicing, CRM, purchase orders, contracts, expenses with receipts, and proposals in one local-first Windows app. No cloud, no accounts, no subscription.
+
+## Beyond the suite
+
+- [Built by Josh Studio](https://builtbyjoshstudio.com/): The parent studio — Notion templates, spreadsheet workbooks, guided planners, and zodiac art.
+- [Kitchen & cooking tools](https://tools.builtbyjoshstudio.com/): Free browser calculators for the kitchen.
+- [Money & business tools](https://tools.builtbyjoshstudio.com/money/): Free browser calculators for personal finance and small business.
