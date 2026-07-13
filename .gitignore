@@ -11,3 +11,9 @@ $RECYCLE.BIN/
 *~
 .idea/
 .vscode/
+
+# Local-only memory layer + assistant state (never publish)
+graphify-out/
+.claude/
+CLAUDE.md
+HANDOFF.md
