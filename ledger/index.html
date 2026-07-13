@@ -611,7 +611,7 @@ body { --accent: var(--c-ledger); }
   <section class="closing" id="beta" data-screen-label="Beta signup">
     <div class="wrap">
       <h2 class="reveal">Want to know when <span class="em">Ledger</span> launches?<br>We'll send one email.</h2>
-      <p class="reveal">Leave an email — it's the only thing we'll ever ask for — and we'll send one message the day it's available.</p>
+      <p class="reveal">Join the Tynkr list on Substack — we'll tell you the day it ships, and share what we're building along the way.</p>
       <form class="beta-form reveal" id="beta-form">
         <input type="email" name="email" required placeholder="you@example.com" aria-label="Email address">
         <input type="hidden" name="app" value="ledger">
@@ -619,7 +619,7 @@ body { --accent: var(--c-ledger); }
       </form>
       <p class="form-done" id="form-done">✓ You're on the list. One email, when it's ready. That's it.</p>
       <p class="form-err" id="form-err">Something went wrong — nothing was sent. Please try again, or email <a href="mailto:josh@builtbyjoshstudio.com">josh@builtbyjoshstudio.com</a>.</p>
-      <p class="form-note">No spam · no newsletter · unsubscribe is instant</p>
+      <p class="form-note">Free on Substack · one-click unsubscribe anytime</p>
     </div>
   </section>
 
@@ -727,27 +727,17 @@ body { --accent: var(--c-ledger); }
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
   }
 
-  // beta form — POST to a static-friendly form endpoint (Formspree). Set your form ID below.
-  const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'; // TODO: replace with your Formspree form ID
+  // beta form — send subscribers to the Tynkr Tools & Co Substack, email pre-filled.
+  const SUBSTACK_SUBSCRIBE = 'https://tynkrtoolsco.substack.com/subscribe';
   const betaForm = document.getElementById('beta-form');
-  betaForm.addEventListener('submit', async (e) => {
+  betaForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    const input = betaForm.querySelector('input[name="email"]');
+    const email = (input.value || '').trim();
+    if (!email) { input.focus(); return; }
     const btn = betaForm.querySelector('button');
-    const err = document.getElementById('form-err');
-    btn.disabled = true; btn.firstChild.textContent = 'Sending… '; err.style.display = 'none';
-    try {
-      const res = await fetch(FORM_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Accept': 'application/json' },
-        body: new FormData(betaForm)
-      });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      betaForm.style.display = 'none';
-      document.getElementById('form-done').style.display = 'block';
-    } catch (_) {
-      err.style.display = 'block';
-      btn.disabled = false; btn.firstChild.textContent = 'Request invite ';
-    }
+    btn.disabled = true; btn.firstChild.textContent = 'Taking you there… ';
+    window.location.href = SUBSTACK_SUBSCRIBE + '?email=' + encodeURIComponent(email);
   });
 
   // ---- fintech instrument layer: count-ups, spark reveal, progress fill, live tx ----
