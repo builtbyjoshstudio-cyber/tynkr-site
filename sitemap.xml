@@ -4,7 +4,7 @@
   <!-- HOMEPAGE -->
   <url>
     <loc>https://tynkr.builtbyjoshstudio.com/</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- TYNKR LEDGER — Personal Finance OS -->
   <url>
     <loc>https://tynkr.builtbyjoshstudio.com/ledger/</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- TYNKR VAULT — Second Brain OS -->
   <url>
     <loc>https://tynkr.builtbyjoshstudio.com/vault/</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- TYNKR HEARTH — Homebuyer OS -->
   <url>
     <loc>https://tynkr.builtbyjoshstudio.com/hearth/</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -36,9 +36,13 @@
   <!-- TYNKR FORGE — Small Business OS -->
   <url>
     <loc>https://tynkr.builtbyjoshstudio.com/forge/</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- LEGAL -->
+  <url><loc>https://tynkr.builtbyjoshstudio.com/privacy/</loc><lastmod>2026-07-20</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://tynkr.builtbyjoshstudio.com/terms/</loc><lastmod>2026-07-20</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
 </urlset>
