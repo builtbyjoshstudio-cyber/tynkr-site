@@ -31,7 +31,7 @@
 <meta property="og:url" content="https://tynkr.builtbyjoshstudio.com/ledger/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tynkr Ledger","operatingSystem":"Windows","applicationCategory":"BusinessApplication","description":"Personal finance on your own disk: transactions, budgets, bills, debt payoff, net worth. Local-first Windows app — no cloud, no accounts, no subscription.","url":"https://tynkr.builtbyjoshstudio.com/ledger/","publisher":{"@type":"Organization","@id":"https://builtbyjoshstudio.com/#organization","name":"Tynkr Tools & Co"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Ledger connect to my bank?","acceptedAnswer":{"@type":"Answer","text":"No. Ledger never asks for bank credentials and makes no network requests to financial institutions. You import transactions by downloading a CSV from your bank’s website and dropping it into Ledger."}},{"@type":"Question","name":"Where is my financial data stored?","acceptedAnswer":{"@type":"Answer","text":"In plain JSON files in a folder you choose on your own machine — one file per year of transactions, plus config files. You can open, back up, or move them with any tool."}},{"@type":"Question","name":"Is there a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. Ledger is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. There is no account and no recurring billing."}},{"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely. The only network request Ledger can make is an optional check for updates, which you can turn off. Airplane mode is a supported configuration."}},{"@type":"Question","name":"Can I get my data out?","acceptedAnswer":{"@type":"Answer","text":"It was never locked in. Your ledger is already JSON on your disk, and reports export to CSV. If you stop using Ledger, your files keep working with anything that reads JSON."}}]}</script>
 <style>
@@ -469,7 +469,7 @@ body { --accent: var(--c-ledger); }
       </div>
 
       <div class="phero-main">
-        <img class="appicon" data-appfb="ledger" src="/assets/tynkr-ledger-512.png" alt="Tynkr Ledger icon">
+        <img class="appicon" data-appfb="ledger" src="/assets/tynkr-ledger-512.png" alt="Tynkr Ledger icon" width="512" height="512">
         <div>
           <span class="os">Personal Finance OS</span>
           <h1>Tynkr<br>Ledger</h1>
@@ -484,7 +484,7 @@ body { --accent: var(--c-ledger); }
       <!-- what it looks like — swap .appwin.big for <img> screenshot later, same frame -->
       <div class="shot-frame" data-screen-label="App mock" aria-hidden="true">
         <div class="appwin big">
-          <div class="tbar"><img data-appfb="ledger" src="/assets/tynkr-ledger-512.png" alt="">Ledger</div>
+          <div class="tbar"><img data-appfb="ledger" src="/assets/tynkr-ledger-512.png" alt="" width="512" height="512">Ledger</div>
           <div class="body"><div class="bigcols">
       <div class="col">
         <div class="spark tall in" aria-hidden="true"><i style="height:30%"></i><i style="height:44%"></i><i style="height:38%"></i><i style="height:56%"></i><i style="height:49%"></i><i style="height:68%"></i><i style="height:61%"></i><i style="height:80%"></i><i style="height:74%"></i><i style="height:100%"></i></div>
@@ -643,7 +643,7 @@ body { --accent: var(--c-ledger); }
 
         <a class="app-card more-card reveal" style="--ac:var(--c-vault)" href="/vault/">
           <div class="app-head">
-            <img data-appfb="vault" src="/assets/tynkr-vault-512.png" alt="Tynkr Vault icon">
+            <img data-appfb="vault" src="/assets/tynkr-vault-512.png" alt="Tynkr Vault icon" width="512" height="512">
             <div><span class="name">Tynkr Vault</span><span class="os">Second Brain OS</span></div>
           </div>
           <p class="desc">Notes, tasks, and weekly reviews in plain Markdown files you own.</p>
@@ -651,7 +651,7 @@ body { --accent: var(--c-ledger); }
 
         <a class="app-card more-card reveal" style="--ac:var(--c-hearth)" href="/hearth/">
           <div class="app-head">
-            <img data-appfb="hearth" src="/assets/tynkr-hearth-512.png" alt="Tynkr Hearth icon">
+            <img data-appfb="hearth" src="/assets/tynkr-hearth-512.png" alt="Tynkr Hearth icon" width="512" height="512">
             <div><span class="name">Tynkr Hearth</span><span class="os">Homebuyer OS</span></div>
           </div>
           <p class="desc">Mortgage math, cash-to-close, and the whole purchase mapped.</p>
@@ -659,7 +659,7 @@ body { --accent: var(--c-ledger); }
 
         <a class="app-card more-card reveal" style="--ac:var(--c-forge)" href="/forge/">
           <div class="app-head">
-            <img data-appfb="forge" src="/assets/tynkr-forge-512.png" alt="Tynkr Forge icon">
+            <img data-appfb="forge" src="/assets/tynkr-forge-512.png" alt="Tynkr Forge icon" width="512" height="512">
             <div><span class="name">Tynkr Forge</span><span class="os">Small Business OS</span></div>
           </div>
           <p class="desc">Invoices, CRM, contracts, and expenses that never bill you monthly.</p>
@@ -670,7 +670,7 @@ body { --accent: var(--c-ledger); }
 
   <div class="wrap">
     <div class="foot">
-      <span class="fb"><img data-appfb="tools" src="/assets/tynkr-tools-512.png" alt="">TYNKR TOOLS &amp; CO · BUILT BY JOSH STUDIO</span>
+      <span class="fb"><img data-appfb="tools" src="/assets/tynkr-tools-512.png" alt="" width="512" height="512">TYNKR TOOLS &amp; CO · BUILT BY JOSH STUDIO</span>
       <span>YOUR DATA · YOUR MACHINE · YOUR BUSINESS</span><span><a href="/privacy/">PRIVACY</a> · <a href="/terms/">TERMS</a></span><span style="flex-basis:100%;opacity:.8;">Tynkr apps are planning tools — not financial, tax, or legal advice. Verify figures with your own records and professionals.</span>
     </div>
     <nav aria-label="More from Built by Josh Studio" style="max-width:1160px;margin:0 auto;padding:16px 28px 40px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;font-size:11.5px;letter-spacing:.05em;">

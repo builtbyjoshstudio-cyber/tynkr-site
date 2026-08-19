@@ -31,7 +31,7 @@
 <meta property="og:url" content="https://tynkr.builtbyjoshstudio.com/hearth/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tynkr Hearth","operatingSystem":"Windows","applicationCategory":"BusinessApplication","description":"The whole home purchase, mapped: mortgage math, down payment planning, cash-to-close, roadmap, document tracker. Local-first Windows app — no cloud, no accounts.","url":"https://tynkr.builtbyjoshstudio.com/hearth/","publisher":{"@type":"Organization","@id":"https://builtbyjoshstudio.com/#organization","name":"Tynkr Tools & Co"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Hearth a mortgage lender or broker?","acceptedAnswer":{"@type":"Answer","text":"No. Hearth is planning software. It doesn’t sell loans, take referral fees, or send your information to lenders — it has no way to, since nothing leaves your machine."}},{"@type":"Question","name":"Where do my documents live?","acceptedAnswer":{"@type":"Answer","text":"In a plain documents folder on your disk, organized however you like. Hearth tracks status and dates; the files themselves are ordinary files you can open and back up with anything."}},{"@type":"Question","name":"Are the mortgage numbers accurate?","acceptedAnswer":{"@type":"Answer","text":"The math is standard amortization plus the taxes, insurance, PMI, and fee figures you enter. It’s a planning estimate — your lender’s Loan Estimate is the binding document."}},{"@type":"Question","name":"Is there a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. Hearth is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. No account, no recurring billing."}},{"@type":"Question","name":"What happens to my data after I close?","acceptedAnswer":{"@type":"Answer","text":"It stays yours. The profile JSON and documents folder remain on your disk as a complete record of the purchase — useful at tax time and beyond."}}]}</script>
 <style>
@@ -469,7 +469,7 @@ body { --accent: var(--c-hearth); }
       </div>
 
       <div class="phero-main">
-        <img class="appicon" data-appfb="hearth" src="/assets/tynkr-hearth-512.png" alt="Tynkr Hearth icon">
+        <img class="appicon" data-appfb="hearth" src="/assets/tynkr-hearth-512.png" alt="Tynkr Hearth icon" width="512" height="512">
         <div>
           <span class="os">Homebuyer OS</span>
           <h1>Tynkr<br>Hearth</h1>
@@ -484,7 +484,7 @@ body { --accent: var(--c-hearth); }
       <!-- what it looks like — swap .appwin.big for <img> screenshot later, same frame -->
       <div class="shot-frame" data-screen-label="App mock" aria-hidden="true">
         <div class="appwin big">
-          <div class="tbar"><img data-appfb="hearth" src="/assets/tynkr-hearth-512.png" alt="">Hearth</div>
+          <div class="tbar"><img data-appfb="hearth" src="/assets/tynkr-hearth-512.png" alt="" width="512" height="512">Hearth</div>
           <div class="body"><div class="bigcols">
       <div class="col">
         <div class="klabel"><span>Down payment</span><b>64% · $41,300 of $64,500</b></div><div class="prog"><i style="width:64%"></i></div>
@@ -631,7 +631,7 @@ body { --accent: var(--c-hearth); }
 
         <a class="app-card more-card reveal" style="--ac:var(--c-ledger)" href="/ledger/">
           <div class="app-head">
-            <img data-appfb="ledger" src="/assets/tynkr-ledger-512.png" alt="Tynkr Ledger icon">
+            <img data-appfb="ledger" src="/assets/tynkr-ledger-512.png" alt="Tynkr Ledger icon" width="512" height="512">
             <div><span class="name">Tynkr Ledger</span><span class="os">Personal Finance OS</span></div>
           </div>
           <p class="desc">Budgets, bills, debt payoff, and net worth — on your own disk.</p>
@@ -639,7 +639,7 @@ body { --accent: var(--c-hearth); }
 
         <a class="app-card more-card reveal" style="--ac:var(--c-vault)" href="/vault/">
           <div class="app-head">
-            <img data-appfb="vault" src="/assets/tynkr-vault-512.png" alt="Tynkr Vault icon">
+            <img data-appfb="vault" src="/assets/tynkr-vault-512.png" alt="Tynkr Vault icon" width="512" height="512">
             <div><span class="name">Tynkr Vault</span><span class="os">Second Brain OS</span></div>
           </div>
           <p class="desc">Notes, tasks, and weekly reviews in plain Markdown files you own.</p>
@@ -647,7 +647,7 @@ body { --accent: var(--c-hearth); }
 
         <a class="app-card more-card reveal" style="--ac:var(--c-forge)" href="/forge/">
           <div class="app-head">
-            <img data-appfb="forge" src="/assets/tynkr-forge-512.png" alt="Tynkr Forge icon">
+            <img data-appfb="forge" src="/assets/tynkr-forge-512.png" alt="Tynkr Forge icon" width="512" height="512">
             <div><span class="name">Tynkr Forge</span><span class="os">Small Business OS</span></div>
           </div>
           <p class="desc">Invoices, CRM, contracts, and expenses that never bill you monthly.</p>
@@ -658,7 +658,7 @@ body { --accent: var(--c-hearth); }
 
   <div class="wrap">
     <div class="foot">
-      <span class="fb"><img data-appfb="tools" src="/assets/tynkr-tools-512.png" alt="">TYNKR TOOLS &amp; CO · BUILT BY JOSH STUDIO</span>
+      <span class="fb"><img data-appfb="tools" src="/assets/tynkr-tools-512.png" alt="" width="512" height="512">TYNKR TOOLS &amp; CO · BUILT BY JOSH STUDIO</span>
       <span>YOUR DATA · YOUR MACHINE · YOUR BUSINESS</span><span><a href="/privacy/">PRIVACY</a> · <a href="/terms/">TERMS</a></span><span style="flex-basis:100%;opacity:.8;">Tynkr apps are planning tools — not financial, tax, legal, or lending advice. Verify figures with your lender and professionals.</span>
     </div>
     <nav aria-label="More from Built by Josh Studio" style="max-width:1160px;margin:0 auto;padding:16px 28px 40px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;font-size:11.5px;letter-spacing:.05em;">
