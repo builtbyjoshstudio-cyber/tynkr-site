@@ -71,6 +71,7 @@ p { margin: 1em 0; max-width: none; color: inherit; }
 /* --- suite visual: the four app windows are drawn mocks, each in its app's hue --- */
 .suite { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 16px; align-items: stretch; margin-top: 64px; }
 @media (max-width: 900px) { .suite { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 560px) { .suite { grid-template-columns: minmax(0,1fr); } }   /* phones: one tile per row, so the mock text doesn't wrap a word at a time */
 .suite .appwin:nth-child(1) { --ac: var(--c-ledger); }
 .suite .appwin:nth-child(2) { --ac: var(--c-vault); }
 .suite .appwin:nth-child(3) { --ac: var(--c-hearth); }
