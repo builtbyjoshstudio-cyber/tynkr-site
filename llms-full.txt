@@ -29,7 +29,7 @@ This site (tynkr.builtbyjoshstudio.com) covers the desktop apps only. The broade
 
 ## Contact
 
-Email: josh@builtbyjoshstudio.com
+Email: support@builtbyjoshstudio.com
 
 
 ## App details and FAQs
@@ -99,4 +99,4 @@ A: Yes. The app needs no internet connection and makes no network calls of its o
 - Local-first: your data is plain files in a folder you choose; works fully offline; airplane mode is supported.
 - No cloud, no accounts, no subscriptions, no telemetry. The apps make no network calls of their own. Microsoft handles the purchase, license, and updates through the Microsoft Store.
 - One-time purchase per app when released; every app is certified, signed, and delivered by the Microsoft Store, and updates arrive through the Store automatically.
-- Publisher: Built by Josh Studio LLC (Tynkr Tools & Co brand); support: josh@builtbyjoshstudio.com.
+- Publisher: Built by Josh Studio LLC (Tynkr Tools & Co brand); support: support@builtbyjoshstudio.com.

@@ -12,11 +12,11 @@
 </script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tynkr Forge — Local-First Small Business OS for Windows</title>
-<meta name="description" content="Invoicing, CRM, purchase orders, contracts, expenses with receipts, proposals — one local-first Windows app. No cloud, no accounts, no subscription.">
+<meta name="description" content="Inventory, orders and invoicing for a small shop, with no monthly fee — one local-first Windows app. No cloud, no accounts, no subscription.">
 <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://tynkr.builtbyjoshstudio.com/forge/">
 <meta property="og:title" content="Tynkr Forge — Local-First Small Business OS for Windows">
-<meta property="og:description" content="Invoicing, CRM, purchase orders, contracts, expenses with receipts, proposals — one local-first Windows app. No cloud, no accounts, no subscription.">
+<meta property="og:description" content="Inventory, orders and invoicing for a small shop, with no monthly fee — one local-first Windows app. No cloud, no accounts, no subscription.">
 <meta property="og:image" content="https://tynkr.builtbyjoshstudio.com/assets/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
 <link rel="stylesheet" href="/css/tokens.css">
 <link rel="stylesheet" href="/css/components.css">
 <link rel="stylesheet" href="/css/tynkr.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tynkr Forge","operatingSystem":"Windows","applicationCategory":"BusinessApplication","description":"Invoicing, CRM, purchase orders, contracts, expenses with receipts, proposals — one local-first Windows app. No cloud, no accounts, no subscription.","url":"https://tynkr.builtbyjoshstudio.com/forge/","publisher":{"@type":"Organization","@id":"https://builtbyjoshstudio.com/#organization","name":"Built by Josh Studio LLC"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tynkr Forge","operatingSystem":"Windows","applicationCategory":"BusinessApplication","description":"Inventory, orders and invoicing for a small shop, with no monthly fee — one local-first Windows app. No cloud, no accounts, no subscription.","url":"https://tynkr.builtbyjoshstudio.com/forge/","publisher":{"@type":"Organization","@id":"https://builtbyjoshstudio.com/#organization","name":"Built by Josh Studio LLC"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can Forge send invoices by email?","acceptedAnswer":{"@type":"Answer","text":"Forge generates the invoice as a PDF you send however you already email — it doesn’t send mail itself or route your client data through any server."}},{"@type":"Question","name":"Where does my business data live?","acceptedAnswer":{"@type":"Answer","text":"In flat JSON files on your disk — one per module — plus a receipts folder of ordinary images. Back it up with whatever you already use."}},{"@type":"Question","name":"Can multiple people use it?","acceptedAnswer":{"@type":"Answer","text":"Forge is built for solo owners and works on one machine at a time. Because the data is flat files, you can share the folder between machines with your own sync — but there’s no multi-user server, by design."}},{"@type":"Question","name":"Is there a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. Forge is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. No account, no recurring billing."}},{"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tynkr Tools & Co","item":"https://tynkr.builtbyjoshstudio.com/"},{"@type":"ListItem","position":2,"name":"Tynkr Forge","item":"https://tynkr.builtbyjoshstudio.com/forge/"}]}</script></head>
 <body data-app="forge">
@@ -66,7 +66,7 @@
           <h1>Tynkr<br>Forge</h1>
         </div>
       </div>
-      <p class="hero-sub">Run a whole business from one app that never bills you monthly — invoices, CRM, purchase orders, contracts, expenses, and proposals in files you control.</p>
+      <p class="hero-sub">Inventory, orders and invoicing for a small shop, with no monthly fee.</p>
       <div class="hero-cta">
         <a class="btn primary" href="#beta">Get notified <span class="arr">→</span></a>
         <a class="btn ghost" href="/">See all four apps</a>
@@ -106,36 +106,71 @@
 
       <div class="featrow reveal">
         <div class="ftext">
-          <span class="eyebrow">Invoicing</span>
+          <span class="eyebrow">Inventory</span>
+          <h3>Know what’s on the shelf</h3>
+          <p>Every item with its SKU, location, and on-hand count. Set a reorder point and a reorder quantity for each one, and anything that dips below its target is flagged as low stock — before a customer finds the empty shelf.</p>
+        </div>
+        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">Kraft mailer boxes</div><div class="ss">SKU MB-12 · 38 on hand · reorder at 50</div></div><span class="badge plain"><span class="d"></span>Low stock</span></div><div class="mini"><div><div class="tt">Shipping labels 4×6</div><div class="ss">SKU SL-46 · 1,200 on hand</div></div><span class="badge pos"><span class="d"></span>In stock</span></div><div class="klabel"><span>below reorder point</span><b>3 items</b></div></div>
+      </div>
+
+      <div class="featrow flip reveal">
+        <div class="ftext">
+          <span class="eyebrow">Vendors · Purchase orders</span>
+          <h3>What you ordered, on the record</h3>
+          <p>Keep your vendors on file and raise purchase orders with line items and delivery status, saved as a PDF to send. Receive an order and the stock counts update — so what you’re owed and what you owe never lives in an email thread.</p>
+        </div>
+        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">PO-0107 · Contoso Supply</div><div class="ss">12 items · due Mar 20</div></div><span class="badge plain"><span class="d"></span>Open</span></div><div class="mini"><div><div class="tt">PO-0106 · Litware Print</div><div class="ss">delivered Mar 5</div></div><span class="badge pos"><span class="d"></span>Received</span></div><div class="klabel"><span>open POs</span><b>$3,180 committed</b></div></div>
+      </div>
+
+      <div class="featrow reveal">
+        <div class="ftext">
+          <span class="eyebrow">CRM · Sales pipeline</span>
+          <h3>Every customer, every conversation</h3>
+          <p>Contacts, companies, and a running history of touchpoints, plus a sales pipeline that moves each deal from first conversation to won. Who you talked to, what you promised, when to follow up — without renting a $99/seat pipeline tool.</p>
+        </div>
+        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">Quill &amp; Co. — Dana R.</div><div class="ss">last contact Mar 4 · follow up Mar 18</div></div><span class="badge acc"><span class="d"></span>Client</span></div><div class="mini"><div><div class="tt">Northwind — Sam T.</div><div class="ss">proposal sent Mar 2</div></div><span class="badge plain"><span class="d"></span>Prospect</span></div><div class="klabel"><span>contacts</span><b>48 · 6 follow-ups this week</b></div></div>
+      </div>
+
+      <div class="featrow flip reveal">
+        <div class="ftext">
+          <span class="eyebrow">Proposals</span>
+          <h3>From pitch to project, tracked</h3>
+          <p>Proposals with scope, pricing, and status — sent, viewed-by-you-know-when, accepted. Won ones convert to invoices without retyping.</p>
+        </div>
+        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">Site refresh — Northwind</div><div class="ss">sent Mar 2 · $12,400</div></div><span class="badge plain"><span class="d"></span>Awaiting</span></div><div class="mini"><div><div class="tt">Brand kit — Fabrikam</div><div class="ss">accepted Feb 28 · $6,800</div></div><span class="badge pos"><span class="d"></span>Won</span></div><div class="klabel"><span>win rate</span><b>7 of 11 this year</b></div></div>
+      </div>
+      <div class="featrow reveal">
+        <div class="ftext">
+          <span class="eyebrow">PDF invoices</span>
           <h3>Invoices out, excuses gone</h3>
-          <p>Numbered invoices with line items, terms, and due dates. Statuses move from draft to sent to paid, and the outstanding total is always one glance away.</p>
+          <p>Numbered invoices with line items, terms, and due dates, saved as a PDF you send however you already email. Statuses move from draft to sent to paid, and the outstanding total is always one glance away.</p>
         </div>
         <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">INV-0043 · Northwind</div><div class="ss">Net 30 · sent Mar 1</div></div><span class="badge plain"><span class="d"></span>Sent</span></div><div class="mini"><div><div class="tt">INV-0044 · Fabrikam</div><div class="ss">Net 15 · 9 days overdue</div></div><span class="badge plain"><span class="d"></span>Overdue</span></div><div class="klabel"><span>outstanding</span><b>$14,210 · 2 overdue</b></div></div>
       </div>
 
       <div class="featrow flip reveal">
         <div class="ftext">
-          <span class="eyebrow">CRM</span>
-          <h3>Every client, every conversation</h3>
-          <p>Contacts, companies, and a running history of touchpoints. Who you talked to, what you promised, when to follow up — without renting a $99/seat pipeline tool.</p>
+          <span class="eyebrow">Projects · Time tracking</span>
+          <h3>Hours in, invoice out</h3>
+          <p>Run each job as a project with its deliverables, and log hours as you go — billable or not. A won proposal becomes a project, and a finished project becomes an invoice, without retyping.</p>
         </div>
-        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">Quill &amp; Co. — Dana R.</div><div class="ss">last contact Mar 4 · follow up Mar 18</div></div><span class="badge acc"><span class="d"></span>Client</span></div><div class="mini"><div><div class="tt">Northwind — Sam T.</div><div class="ss">proposal sent Mar 2</div></div><span class="badge plain"><span class="d"></span>Prospect</span></div><div class="klabel"><span>contacts</span><b>48 · 6 follow-ups this week</b></div></div>
+        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">Website refresh — Northwind</div><div class="ss">deliverables 4 of 6 · 31.5 h logged</div></div><span class="badge acc"><span class="d"></span>Active</span></div><div class="mini"><div><div class="tt">Brand kit — Fabrikam</div><div class="ss">12 h billable · ready to invoice</div></div><span class="badge pos"><span class="d"></span>Done</span></div><div class="klabel"><span>this week</span><b>18.5 h · 16 billable</b></div></div>
       </div>
 
       <div class="featrow reveal">
         <div class="ftext">
-          <span class="eyebrow">Purchase orders</span>
-          <h3>What you ordered, on the record</h3>
-          <p>POs with vendors, line items, and delivery status — so what you’re owed and what you owe never lives in an email thread.</p>
+          <span class="eyebrow">Financial dashboard</span>
+          <h3>The whole shop on one screen</h3>
+          <p>Revenue, cash flow, what’s expected and coming up, and the top risks — like stock below its reorder point — in one view. Save it as a PDF when you want a snapshot.</p>
         </div>
-        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">PO-0107 · Contoso Supply</div><div class="ss">12 items · due Mar 20</div></div><span class="badge plain"><span class="d"></span>Open</span></div><div class="mini"><div><div class="tt">PO-0106 · Litware Print</div><div class="ss">delivered Mar 5</div></div><span class="badge pos"><span class="d"></span>Received</span></div><div class="klabel"><span>open POs</span><b>$3,180 committed</b></div></div>
+        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">Cash flow · March</div><div class="ss">in $9,840 · out $6,215</div></div><span class="amt" style="color:var(--pos)">+$3,625</span></div><div class="mini"><div><div class="tt">Top risk</div><div class="ss">3 items below reorder point</div></div><span class="badge plain"><span class="d"></span>Watch</span></div><div class="klabel"><span>expected next 30 days</span><b>$14,210 · 2 overdue</b></div></div>
       </div>
 
       <div class="featrow flip reveal">
         <div class="ftext">
           <span class="eyebrow">Contracts</span>
           <h3>Signed, dated, findable</h3>
-          <p>Track every agreement with parties, dates, renewal terms, and the document itself. Renewal reminders fire before the auto-renew does.</p>
+          <p>Track every agreement with parties, dates, an optional renewal date, and the document itself — all in one place instead of a downloads folder.</p>
         </div>
         <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">MSA — Quill &amp; Co.</div><div class="ss">signed Jan 12 · renews Jan 2027</div></div><span class="badge pos"><span class="d"></span>Active</span></div><div class="mini"><div><div class="tt">NDA — Northwind</div><div class="ss">signed Mar 2</div></div><span class="badge pos"><span class="d"></span>Active</span></div><div class="klabel"><span>renewals</span><b>1 due in 90 days</b></div></div>
       </div>
@@ -147,15 +182,6 @@
           <p>Log expenses with categories and attach the receipt image right there. Come April, filter by category and export — done.</p>
         </div>
         <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">Office chair</div><div class="ss">equipment · receipt attached</div></div><span class="amt" style="color:var(--neg)">−$412.80</span></div><div class="mini"><div><div class="tt">Client lunch</div><div class="ss">meals · receipt attached</div></div><span class="amt" style="color:var(--neg)">−$64.20</span></div><div class="klabel"><span>Q1 deductible</span><b>$4,812 · 41 receipts</b></div></div>
-      </div>
-
-      <div class="featrow flip reveal">
-        <div class="ftext">
-          <span class="eyebrow">Proposals</span>
-          <h3>From pitch to project, tracked</h3>
-          <p>Proposals with scope, pricing, and status — sent, viewed-by-you-know-when, accepted. Won ones convert to invoices without retyping.</p>
-        </div>
-        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">Site refresh — Northwind</div><div class="ss">sent Mar 2 · $12,400</div></div><span class="badge plain"><span class="d"></span>Awaiting</span></div><div class="mini"><div><div class="tt">Brand kit — Fabrikam</div><div class="ss">accepted Feb 28 · $6,800</div></div><span class="badge pos"><span class="d"></span>Won</span></div><div class="klabel"><span>win rate</span><b>7 of 11 this year</b></div></div>
       </div>
     </div>
   </section>
@@ -216,7 +242,7 @@
         <button class="btn primary" type="submit">Request invite <span class="arr">→</span></button>
       </form>
       <p class="form-done" id="form-done">✓ You're on the list. One email, when it's ready. That's it.</p>
-      <p class="form-err" id="form-err">Something went wrong — nothing was sent. Please try again, or email <a href="mailto:josh@builtbyjoshstudio.com">josh@builtbyjoshstudio.com</a>.</p>
+      <p class="form-err" id="form-err">Something went wrong — nothing was sent. Please try again, or email <a href="mailto:support@builtbyjoshstudio.com">support@builtbyjoshstudio.com</a>.</p>
       <p class="form-note">Free on Substack · one-click unsubscribe anytime</p>
     </div>
   </section>
