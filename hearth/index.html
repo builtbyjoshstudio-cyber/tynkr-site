@@ -291,8 +291,8 @@
   document.documentElement.classList.add('js');
 
   const order = ['light', 'dark'];
-  // Dark is the zodiac palette from the main site (tokens.css "cosmic"), without the star field
-  const ATTR = { light: 'light', dark: 'cosmic' };
+  // Dark is the apps' own dark theme (tokens.css "dark", the same Payne's gray the apps use)
+  const ATTR = { light: 'light', dark: 'dark' };
   const btns = [...document.querySelectorAll('[data-theme-btn]')];
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 

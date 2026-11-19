@@ -12,15 +12,21 @@
   --c-ledger: #1e7a55; --c-vault: #5a4bb8; --c-hearth: #b84f2a; --c-forge: #1f7f78;
   --s-ledger: #e3f3ec; --s-vault: #ebe8fa; --s-hearth: #fbe9e2; --s-forge: #e2f3f1;
 }
-[data-theme="cosmic"] {
+/* dark: each app's own dark accents (the apps' css/accents/<app>.css) */
+[data-theme="dark"] {
   --c-ledger: #6fd3a0; --c-vault: #a99cf0; --c-hearth: #ff9a78; --c-forge: #6fd3c8;
-  --s-ledger: #163a2c; --s-vault: #2a2560; --s-hearth: #4a2a22; --s-forge: #153a3a;
+  --s-ledger: #1e3a2d; --s-vault: #2e2a52; --s-hearth: #4a2a1e; --s-forge: #1b3a37;
 }
 /* an app page takes its app's colour as the accent */
 body[data-app="ledger"] { --accent: var(--c-ledger); --accent-soft: var(--s-ledger); }
 body[data-app="vault"]  { --accent: var(--c-vault);  --accent-soft: var(--s-vault); }
 body[data-app="hearth"] { --accent: var(--c-hearth); --accent-soft: var(--s-hearth); }
 body[data-app="forge"]  { --accent: var(--c-forge);  --accent-soft: var(--s-forge); }
+/* text on an accent fill, per app, in dark (as in the apps) */
+[data-theme="dark"] body[data-app="ledger"] { --accent-ink: #0f3d2b; }
+[data-theme="dark"] body[data-app="vault"]  { --accent-ink: #1f1a44; }
+[data-theme="dark"] body[data-app="hearth"] { --accent-ink: #4a1f10; }
+[data-theme="dark"] body[data-app="forge"]  { --accent-ink: #0f403c; }
 
 /* --- element defaults: the pages were built without heading margins or a text measure --- */
 html { scroll-behavior: smooth; }
@@ -33,18 +39,9 @@ p { margin: 1em 0; max-width: none; color: inherit; }
 ::view-transition-new(root) { z-index: 1; }
 ::view-transition-old(root) { z-index: 0; }
 
-/* --- dark = the zodiac edition from the main site (data-theme="cosmic" in tokens.css):
-       indigo ground, the nebula glow fixed behind the page, translucent sheets. No star field.
-       The page script sets the attribute when the visitor picks Dark. ----------------------- */
-[data-theme="cosmic"] body { position: relative; isolation: isolate; }
-[data-theme="cosmic"] body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
-  background:
-    radial-gradient(55% 45% at 72% 18%, var(--nebula-1), transparent 62%),
-    radial-gradient(40% 38% at 18% 78%, var(--nebula-2), transparent 62%),
-    radial-gradient(30% 30% at 55% 60%, var(--nebula-3), transparent 60%); }
-[data-theme="cosmic"] :is(.panel, .appwin, .app-card, .fdemo, .ftree, .stat, .card, .faq details) { background: rgba(18,20,58,.72); border-color: var(--line-2); }
-[data-theme="cosmic"] .appwin .tbar { background: rgba(26,29,77,.7); }
-@media print { [data-theme="cosmic"] body::before { display: none; } }
+/* --- dark = the apps' own dark theme: data-theme="dark" in tokens.css (Payne's gray, identical to
+       the apps' tokens.css). Cards, windows and panels sit on --surface over --canvas exactly as in the
+       apps, so no overrides are needed here. The page script sets the attribute when the visitor picks Dark. */
 
 /* --- top bar: wordmark + line tag, back link, theme switch ------------------- */
 .tk-nav { position: static; }
@@ -58,7 +55,7 @@ p { margin: 1em 0; max-width: none; color: inherit; }
 .btn:hover .arr { transform: translateX(4px); }
 .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 .btn.primary:hover { background: color-mix(in srgb, var(--accent) 86%, #000); border-color: color-mix(in srgb, var(--accent) 86%, #000); color: var(--accent-ink); }
-[data-theme="cosmic"] .btn.primary:hover { background: color-mix(in srgb, var(--accent) 78%, #fff); border-color: color-mix(in srgb, var(--accent) 78%, #fff); }
+[data-theme="dark"] .btn.primary:hover { background: color-mix(in srgb, var(--accent) 78%, #fff); border-color: color-mix(in srgb, var(--accent) 78%, #fff); }
 .btn[disabled] { opacity: .6; cursor: wait; }
 
 /* --- hero ------------------------------------------------------------------- */
@@ -316,7 +313,6 @@ a.app-card:hover { color: inherit; text-decoration: none; }
 .shot:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .shot img { display: block; width: 100%; height: auto; }
 .shot .cap { display: block; padding: 11px 16px; border-top: var(--hair); font-size: 13px; font-weight: 500; color: var(--muted); }
-[data-theme="cosmic"] .shot { background: rgba(18,20,58,.72); border-color: var(--line-2); }
 .shot-frame .shot { border-radius: var(--r); }
 .shot-dialog { padding: 0; border: 0; background: transparent; width: min(96vw, 1600px); max-width: none; max-height: none; overflow: visible; }
 .shot-dialog::backdrop { background: rgba(8, 9, 20, .86); }
