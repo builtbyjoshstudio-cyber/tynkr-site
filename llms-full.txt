@@ -9,7 +9,7 @@ This site (tynkr.builtbyjoshstudio.com) covers the desktop apps only. The broade
 ## The apps
 
 - [Tynkr Ledger — Personal Finance OS](https://tynkr.builtbyjoshstudio.com/ledger/): Personal finance on your own disk — transactions, budgets, bills, debt payoff, and net worth. Local-first Windows app; no cloud, no accounts, no subscription.
-- [Tynkr Vault — Second Brain OS](https://tynkr.builtbyjoshstudio.com/vault/): Notes, tasks, and weekly reviews as plain Markdown files you own, with fuzzy search in milliseconds. Local-first Windows app; no cloud, no accounts, no subscription.
+- [Tynkr Vault — Second Brain OS](https://tynkr.builtbyjoshstudio.com/vault/): Notes in plain Markdown files you own, with tasks and weekly reviews built in, and fuzzy search in milliseconds. Local-first Windows app; no cloud, no accounts, no subscription.
 - [Tynkr Hearth — Homebuyer OS](https://tynkr.builtbyjoshstudio.com/hearth/): The whole home purchase mapped — mortgage math, down-payment planning, cash-to-close, roadmap, and document tracker. Local-first Windows app; no cloud, no accounts.
 - [Tynkr Forge — Small Business OS](https://tynkr.builtbyjoshstudio.com/forge/): Inventory, orders and invoicing for a small shop, with no monthly fee. Features, in order: inventory with stock levels and reorder targets, vendors and purchase orders, customer CRM and sales pipeline, proposals, PDF invoices, projects and time tracking, financial dashboard, contracts, expenses with receipts, and reminders. One local-first Windows app — no cloud, no accounts, no subscription.
 
@@ -51,7 +51,7 @@ A: It was never locked in. Your ledger is already JSON on your disk, and reports
 
 ### Tynkr Vault
 URL: https://tynkr.builtbyjoshstudio.com/vault/
-What it is: Notes, tasks, and weekly reviews as plain Markdown files you own. Fuzzy search in milliseconds. Local-first Windows app — no cloud, no accounts, no subscription.
+What it is: Notes in plain Markdown files you own, with tasks and weekly reviews built in. Fuzzy search in milliseconds. Local-first Windows app — no cloud, no accounts, no subscription.
 Platform: Windows · category: BusinessApplication · status: in development (not yet released); one-time purchase when it ships.
 Q: Are my notes stored in a database?
 A: No. Your notes are plain Markdown files in a folder you choose. Vault keeps a local search index for speed, but the files themselves are the source of truth — readable by any editor.
@@ -87,7 +87,7 @@ Platform: Windows · category: BusinessApplication · status: in development (no
 Q: Can Forge send invoices by email?
 A: Forge generates the invoice as a PDF you send however you already email — it doesn’t send mail itself or route your client data through any server.
 Q: Where does my business data live?
-A: In flat JSON files on your disk — one per module — plus a receipts folder of ordinary images. Back it up with whatever you already use.
+A: In flat JSON files on your disk — one per module — plus a vault folder where receipts and documents sit as ordinary files. Back it up with whatever you already use.
 Q: Can multiple people use it?
 A: Forge is built for solo owners and works on one machine at a time. Because the data is flat files, you can share the folder between machines with your own sync — but there’s no multi-user server, by design.
 Q: Is there a subscription?
