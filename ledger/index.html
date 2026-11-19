@@ -34,8 +34,8 @@
 <link rel="stylesheet" href="/css/tokens.css">
 <link rel="stylesheet" href="/css/components.css">
 <link rel="stylesheet" href="/css/tynkr.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tynkr Ledger","operatingSystem":"Windows","applicationCategory":"BusinessApplication","description":"Personal finance on your own disk: transactions, budgets, bills, debt payoff, net worth. Local-first Windows app — no cloud, no accounts, no subscription.","url":"https://tynkr.builtbyjoshstudio.com/ledger/","publisher":{"@type":"Organization","@id":"https://builtbyjoshstudio.com/#organization","name":"Built by Josh Studio LLC"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Ledger connect to my bank?","acceptedAnswer":{"@type":"Answer","text":"No. Ledger never asks for bank credentials and makes no network requests to financial institutions. You import transactions by downloading a CSV from your bank’s website and dropping it into Ledger."}},{"@type":"Question","name":"Where is my financial data stored?","acceptedAnswer":{"@type":"Answer","text":"In plain JSON files in a folder you choose on your own machine — one file per year of transactions, plus config files. You can open, back up, or move them with any tool."}},{"@type":"Question","name":"Is there a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. Ledger is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. There is no account and no recurring billing."}},{"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online. Airplane mode is a supported configuration."}},{"@type":"Question","name":"Can I get my data out?","acceptedAnswer":{"@type":"Answer","text":"It was never locked in. Your ledger is already JSON on your disk, and reports export to CSV. If you stop using Ledger, your files keep working with anything that reads JSON."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tynkr Ledger","operatingSystem":"Windows","applicationCategory":"FinanceApplication","description":"Personal finance on your own disk: transactions, budgets, bills, debt payoff, net worth. Local-first Windows app — no cloud, no accounts, no subscription.","url":"https://tynkr.builtbyjoshstudio.com/ledger/","publisher":{"@type":"Organization","@id":"https://builtbyjoshstudio.com/#organization","name":"Built by Josh Studio LLC"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Ledger connect to my bank?","acceptedAnswer":{"@type":"Answer","text":"No. Ledger never asks for bank credentials and makes no network requests to financial institutions. You import transactions by downloading a CSV, OFX or QFX file from your bank’s website and opening it in Ledger."}},{"@type":"Question","name":"Where is my financial data stored?","acceptedAnswer":{"@type":"Answer","text":"In JSON files in a folder you choose on your own machine — one file per year of transactions, plus files for budgets, bills, debts and settings. You can open, back up, or move them with any tool. If you turn on optional encryption, the files are encrypted with your password."}},{"@type":"Question","name":"Is there a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. Ledger is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. There is no account and no recurring billing."}},{"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online. Airplane mode is a supported configuration."}},{"@type":"Question","name":"Can I get my data out?","acceptedAnswer":{"@type":"Answer","text":"It was never locked in. Your data is already JSON on your disk (or encrypted JSON, if you turn encryption on), and you can back it all up as a single file anytime. If you stop using Ledger, your files keep working with anything that reads JSON."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tynkr Tools & Co","item":"https://tynkr.builtbyjoshstudio.com/"},{"@type":"ListItem","position":2,"name":"Tynkr Ledger","item":"https://tynkr.builtbyjoshstudio.com/ledger/"}]}</script></head>
 <body data-app="ledger">
 
@@ -111,7 +111,7 @@
         <div class="ftext">
           <span class="eyebrow">Transactions · CSV and OFX import</span>
           <h3>Your bank feed, without the bank watching</h3>
-          <p>Download a CSV from any bank, drop it in, and Ledger maps the columns, de-duplicates, and categorizes. Nothing connects to your bank; nothing needs your credentials.</p>
+          <p>Download a CSV, OFX or QFX file from your bank and open it in Ledger. It reads the columns from the header row, skips anything you’ve already imported, sorts transactions into categories with rules you can edit, and lets you review before saving. Nothing connects to your bank; nothing needs your credentials.</p>
         </div>
         <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">CSV import — Chase</div><div class="ss">34 rows · 0 duplicates</div></div><span class="badge pos"><span class="d"></span>Imported</span></div><div class="mini"><div><div class="tt">Paycheck — Acme Co</div><div class="ss">Auto-categorized · Income</div></div><span class="amt" style="color:var(--pos)">+$4,280.00</span></div><div class="mini"><div><div class="tt">Grocery Outlet</div><div class="ss">Auto-categorized · Food</div></div><span class="amt" style="color:var(--neg)">−$86.12</span></div></div>
       </div>
@@ -120,7 +120,7 @@
         <div class="ftext">
           <span class="eyebrow">Budgets · 50/30/20</span>
           <h3>Budgets that fit how you actually think</h3>
-          <p>Category budgets, envelope-style targets, or the classic 50/30/20 split — pick a method per month and change your mind anytime. History stays intact either way.</p>
+          <p>Category budgets, month by month, with optional rollover of what you didn’t spend. A 50/30/20 view shows how your needs, wants and savings compare to the rule — or to your own split. Past months keep their own budget file, so history stays intact.</p>
         </div>
         <div class="fdemo" aria-hidden="true"><div class="klabel"><span>Needs · 50%</span><b>$2,140 of $2,400</b></div><div class="prog"><i style="width:89%"></i></div><div class="klabel"><span>Wants · 30%</span><b>$980 of $1,440</b></div><div class="prog"><i style="width:68%"></i></div><div class="klabel"><span>Savings · 20%</span><b>$960 of $960</b></div><div class="prog"><i style="width:100%"></i></div></div>
       </div>
@@ -138,7 +138,7 @@
         <div class="ftext">
           <span class="eyebrow">Debt payoff</span>
           <h3>Avalanche or snowball. Your call.</h3>
-          <p>List every debt, pick a strategy, and watch the payoff date move as you pay. Extra-payment scenarios show exactly how many months each $100 buys back.</p>
+          <p>List every debt, pick a strategy, and watch the payoff date move as you pay. Slide in an extra monthly payment and see how many months sooner you’re debt-free and how much interest you save.</p>
         </div>
         <div class="fdemo" aria-hidden="true"><div class="klabel"><span>Visa — 24.9% APR</span><b>$3,214 left</b></div><div class="prog"><i style="width:62%"></i></div><div class="klabel"><span>Car loan — 6.4% APR</span><b>$8,905 left</b></div><div class="prog"><i style="width:41%"></i></div><div class="klabel"><span>Debt-free</span><b>Oct 2027 → Jun 2027 with +$150/mo</b></div></div>
       </div>
@@ -147,18 +147,18 @@
         <div class="ftext">
           <span class="eyebrow">Net worth</span>
           <h3>The one number that tells the truth</h3>
-          <p>Accounts, assets, and debts rolled into a monthly net-worth series. No projections, no gamified score — just the trend line, computed from your own files.</p>
+          <p>Accounts, assets, and debts rolled into a monthly net-worth snapshot, with an optional trend line. No gamified score — just the numbers, computed from your own files.</p>
         </div>
-        <div class="fdemo" aria-hidden="true"><div class="spark in" aria-hidden="true"><i style="height:34%"></i><i style="height:48%"></i><i style="height:41%"></i><i style="height:60%"></i><i style="height:52%"></i><i style="height:71%"></i><i style="height:64%"></i><i style="height:83%"></i><i style="height:100%"></i></div><div class="klabel"><span>Net worth</span><b>$128,414.30</b></div><div class="klabel"><span>12-month change</span><b>+$31,208</b></div></div>
+        <div class="fdemo" aria-hidden="true"><div class="spark in" aria-hidden="true"><i style="height:34%"></i><i style="height:48%"></i><i style="height:41%"></i><i style="height:60%"></i><i style="height:52%"></i><i style="height:71%"></i><i style="height:64%"></i><i style="height:83%"></i><i style="height:100%"></i></div><div class="klabel"><span>Net worth</span><b>$128,414.30</b></div><div class="klabel"><span>Year to date</span><b>+$31,208</b></div></div>
       </div>
 
       <div class="featrow flip reveal">
         <div class="ftext">
           <span class="eyebrow">Sinking funds · Reports</span>
           <h3>Save on purpose, report on everything</h3>
-          <p>Sinking funds give every big irregular expense its own bucket. Reports slice spending by category, month, or payee — and export to CSV, because your data is yours.</p>
+          <p>Sinking funds give every big irregular expense its own bucket. Reports cover budgets, spending, net worth, debts, funds, tags and taxes — save any of them as a PDF, and download your tax summary as CSV.</p>
         </div>
-        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">Car repairs</div><div class="ss">Sinking fund</div></div><span class="amt">$1,850 / $3,000</span></div><div class="mini"><div><div class="tt">Holiday gifts</div><div class="ss">Sinking fund</div></div><span class="amt">$420 / $900</span></div><div class="klabel"><span>March spending report</span><b>38 categories · export CSV</b></div></div>
+        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">Car repairs</div><div class="ss">Sinking fund</div></div><span class="amt">$1,850 / $3,000</span></div><div class="mini"><div><div class="tt">Holiday gifts</div><div class="ss">Sinking fund</div></div><span class="amt">$420 / $900</span></div><div class="klabel"><span>March budget summary</span><b>save as PDF</b></div></div>
       </div>
     </div>
   </section>
@@ -172,14 +172,19 @@
         <span class="tag">Open formats</span>
       </div>
       <div class="datacols">
-        <p class="dnote reveal">Ledger writes <strong>one JSON file per year</strong> of transactions, plus a config file for accounts, budgets, and rules. Open any year in a text editor, diff it, script against it — it’s just data.<br><br>No proprietary database. No export fee. No account standing between you and your own files. If Ledger disappeared tomorrow, this folder still works.</p>
-        <div class="ftree reveal"><b>Documents/Tynkr/Ledger/</b>
-├─ ledger-2026.json      <i>· transactions, this year</i>
-├─ ledger-2025.json      <i>· transactions, archived</i>
-├─ ledger-2024.json
-├─ budgets.json          <i>· methods, targets, history</i>
-├─ accounts.json         <i>· accounts, debts, assets</i>
-└─ config.json           <i>· rules, categories, settings</i></div>
+        <p class="dnote reveal">Ledger writes <strong>one JSON file per year</strong> of transactions, one per month for budgets, and a small file each for accounts, bills, debts, sinking funds and settings. Open any year in a text editor, diff it, script against it — it’s just data. Turn on optional encryption and the same files are saved encrypted instead.<br><br>No proprietary database. No export fee. No account standing between you and your own files. If Ledger disappeared tomorrow, this folder still works.</p>
+        <div class="ftree reveal"><b>Documents/Tynkr Ledger/</b>
+├─ transactions-2026.json  <i>· this year’s transactions</i>
+├─ transactions-2025.json
+├─ budget-2026-03.json     <i>· one per month</i>
+├─ net-worth-2026.json     <i>· monthly snapshots</i>
+├─ accounts.json
+├─ bills.json
+├─ debt.json
+├─ sinking-funds.json
+├─ goals.json
+├─ config.json             <i>· budget plan, categories, rules</i>
+└─ attachments/            <i>· receipts you attach</i></div>
       </div>
     </div>
   </section>
@@ -193,15 +198,15 @@
         <span class="tag">FAQ</span>
       </div>
       <div class="faq">
-        <details class="reveal"><summary>Does Ledger connect to my bank?</summary><p>No. Ledger never asks for bank credentials and makes no network requests to financial institutions. You import transactions by downloading a CSV from your bank’s website and dropping it into Ledger.</p></details>
+        <details class="reveal"><summary>Does Ledger connect to my bank?</summary><p>No. Ledger never asks for bank credentials and makes no network requests to financial institutions. You import transactions by downloading a CSV, OFX or QFX file from your bank’s website and opening it in Ledger.</p></details>
 
-        <details class="reveal"><summary>Where is my financial data stored?</summary><p>In plain JSON files in a folder you choose on your own machine — one file per year of transactions, plus config files. You can open, back up, or move them with any tool.</p></details>
+        <details class="reveal"><summary>Where is my financial data stored?</summary><p>In JSON files in a folder you choose on your own machine — one file per year of transactions, plus files for budgets, bills, debts and settings. You can open, back up, or move them with any tool. If you turn on optional encryption, the files are encrypted with your password.</p></details>
 
         <details class="reveal"><summary>Is there a subscription?</summary><p>No. Ledger is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. There is no account and no recurring billing.</p></details>
 
         <details class="reveal"><summary>Does it work offline?</summary><p>Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online. Airplane mode is a supported configuration.</p></details>
 
-        <details class="reveal"><summary>Can I get my data out?</summary><p>It was never locked in. Your ledger is already JSON on your disk, and reports export to CSV. If you stop using Ledger, your files keep working with anything that reads JSON.</p></details>
+        <details class="reveal"><summary>Can I get my data out?</summary><p>It was never locked in. Your data is already JSON on your disk (or encrypted JSON, if you turn encryption on), and you can back it all up as a single file anytime. If you stop using Ledger, your files keep working with anything that reads JSON.</p></details>
       </div>
     </div>
   </section>
@@ -392,7 +397,7 @@
   // live transaction feed — cycles while on screen, pauses off-viewport
   const TX = [
     { tt: 'Grocery Outlet', ss: 'Checking · Mar 4', amt: '−$86.12', neg: true },
-    { tt: 'Sinking fund — Car repairs', ss: 'Transfer · Mar 5', amt: '+$150.00', neg: false },
+    { tt: 'Transfer to savings', ss: 'Transfer · Mar 5', amt: '+$150.00', neg: false },
     { tt: 'Electric bill', ss: 'Bills · Mar 6', amt: '−$114.60', neg: true },
     { tt: 'Freelance invoice', ss: 'Checking · Mar 7', amt: '+$975.00', neg: false },
     { tt: 'Internet', ss: 'Bills · Mar 8', amt: '−$69.99', neg: true },

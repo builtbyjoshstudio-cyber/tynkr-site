@@ -37,17 +37,17 @@ Email: support@builtbyjoshstudio.com
 ### Tynkr Ledger
 URL: https://tynkr.builtbyjoshstudio.com/ledger/
 What it is: Personal finance on your own disk: transactions, budgets, bills, debt payoff, net worth. Local-first Windows app — no cloud, no accounts, no subscription.
-Platform: Windows · category: BusinessApplication · status: in development (not yet released); one-time purchase when it ships.
+Platform: Windows · category: FinanceApplication · status: in development (not yet released); one-time purchase when it ships.
 Q: Does Ledger connect to my bank?
-A: No. Ledger never asks for bank credentials and makes no network requests to financial institutions. You import transactions by downloading a CSV from your bank’s website and dropping it into Ledger.
+A: No. Ledger never asks for bank credentials and makes no network requests to financial institutions. You import transactions by downloading a CSV, OFX or QFX file from your bank’s website and opening it in Ledger.
 Q: Where is my financial data stored?
-A: In plain JSON files in a folder you choose on your own machine — one file per year of transactions, plus config files. You can open, back up, or move them with any tool.
+A: In JSON files in a folder you choose on your own machine — one file per year of transactions, plus files for budgets, bills, debts and settings. You can open, back up, or move them with any tool. If you turn on optional encryption, the files are encrypted with your password.
 Q: Is there a subscription?
 A: No. Ledger is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. There is no account and no recurring billing.
 Q: Does it work offline?
 A: Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online. Airplane mode is a supported configuration.
 Q: Can I get my data out?
-A: It was never locked in. Your ledger is already JSON on your disk, and reports export to CSV. If you stop using Ledger, your files keep working with anything that reads JSON.
+A: It was never locked in. Your data is already JSON on your disk (or encrypted JSON, if you turn encryption on), and you can back it all up as a single file anytime. If you stop using Ledger, your files keep working with anything that reads JSON.
 
 ### Tynkr Vault
 URL: https://tynkr.builtbyjoshstudio.com/vault/
@@ -71,13 +71,13 @@ Platform: Windows · category: BusinessApplication · status: in development (no
 Q: Is Hearth a mortgage lender or broker?
 A: No. Hearth is planning software. It doesn’t sell loans, take referral fees, or send your information to lenders — it has no way to, since nothing leaves your machine.
 Q: Where do my documents live?
-A: In a plain documents folder on your disk, organized however you like. Hearth tracks status and dates; the files themselves are ordinary files you can open and back up with anything.
+A: Wherever you already keep them. Hearth doesn’t store your documents — it tracks a checklist of the eleven a purchase usually needs, with a status and a note for each. Your PDFs stay in your own folders.
 Q: Are the mortgage numbers accurate?
 A: The math is standard amortization plus the taxes, insurance, PMI, and fee figures you enter. It’s a planning estimate — your lender’s Loan Estimate is the binding document.
 Q: Is there a subscription?
 A: No. Hearth is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. No account, no recurring billing.
 Q: What happens to my data after I close?
-A: It stays yours. The profile JSON and documents folder remain on your disk as a complete record of the purchase — useful at tax time and beyond.
+A: It stays yours. Your JSON files and property photos stay in your data folder as a record of the purchase — and you can export a .zip backup or CSVs any time.
 
 ### Tynkr Forge
 URL: https://tynkr.builtbyjoshstudio.com/forge/
@@ -99,5 +99,5 @@ A: Yes. The app needs no internet connection and makes no network calls of its o
 
 - Local-first: your data is plain files in a folder you choose; works fully offline; airplane mode is supported.
 - No cloud, no accounts, no subscriptions, no telemetry. The apps make no network calls of their own. Microsoft handles the purchase, license, and updates through the Microsoft Store.
-- One-time purchase per app when released; every app is certified, signed, and delivered by the Microsoft Store, and updates arrive through the Store automatically.
+- One-time purchase per app when released; every app will be certified, signed, and delivered by the Microsoft Store, with updates through the Store automatically.
 - Publisher: Built by Josh Studio LLC (Tynkr Tools & Co brand); support: support@builtbyjoshstudio.com.

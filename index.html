@@ -77,7 +77,7 @@
               <div class="mini"><div><div class="tt">Paycheck — Acme Co</div><div class="ss">Checking · Mar 1</div></div><span class="amt" style="color:var(--pos)">+$4,280.00</span></div>
               <div class="mini"><div><div class="tt">Mortgage</div><div class="ss">Bills · Mar 3</div></div><span class="amt" style="color:var(--neg)">−$1,812.40</span></div>
             </div>
-            <div class="klabel"><span>Net worth</span><span><b id="networth">$128,414.30</b><i class="delta">+3.4% MoM</i></span></div>
+            <div class="klabel"><span>Net worth</span><span><b id="networth">$128,414.30</b><i class="delta">+$4,212 vs last month</i></span></div>
           </div>
         </div>
         <div class="appwin">
@@ -139,7 +139,7 @@
         <div class="panel reveal">
           <span class="cap">Open formats</span>
           <h3>Files you can actually read</h3>
-          <p>Your ledger is <code>JSON</code>. Your notes are <code>Markdown</code>. No proprietary database, no export hostage-taking. Grep it, script it, back it up with anything.</p>
+          <p>Your ledger is <code>JSON</code>. Your notes are <code>Markdown</code>. No proprietary database, no export hostage-taking. Grep it, script it, back it up with anything — unless you turn on encryption, which locks the files with your password.</p>
         </div>
         <div class="panel reveal">
           <span class="cap">No rent</span>
@@ -185,7 +185,7 @@
             <img data-appfb="hearth" src="assets/tynkr-hearth-512.png" alt="Tynkr Hearth icon" width="512" height="512">
             <div><span class="name">Tynkr Hearth</span><span class="os">Homebuyer OS</span></div>
           </div>
-          <p class="desc">The entire home purchase, mapped. Mortgage math, down payment planning, cash-to-close, a roadmap with real progress — and every document tracked in one private place.</p>
+          <p class="desc">The entire home purchase, mapped. Mortgage math, down payment planning, cash-to-close, a roadmap with real progress — and your key documents tracked in one private place.</p>
           <div class="feat">
             <span class="badge"><span class="d"></span>Mortgage calculator</span><span class="badge"><span class="d"></span>Down payment planner</span><span class="badge"><span class="d"></span>Cash-to-close</span><span class="badge"><span class="d"></span>Buying roadmap</span><span class="badge"><span class="d"></span>Document tracker</span>
           </div>
@@ -214,12 +214,12 @@
       </div>
       <p class="lead reveal">Every Tynkr app follows the same contract with you. No exceptions, no asterisks, no "premium tier" that changes the rules.</p>
       <div class="eng-rows">
-        <div class="li reveal"><div class="av">01</div><div><div class="tt">Delivered by the Microsoft Store</div><div class="ss">Every app is certified, signed, and delivered by the Microsoft Store, and updates arrive through the Store automatically.</div></div></div>
+        <div class="li reveal"><div class="av">01</div><div><div class="tt">Delivered by the Microsoft Store</div><div class="ss">Every app will be certified, signed, and delivered by the Microsoft Store, with updates through the Store automatically.</div></div></div>
         <div class="li reveal"><div class="av">02</div><div><div class="tt">100% offline</div><div class="ss">No telemetry, no accounts. The apps make no network calls of their own. Microsoft handles the purchase, license, and updates through the Microsoft Store. Airplane mode is a supported configuration.</div></div></div>
         <div class="li reveal"><div class="av">03</div><div><div class="tt">Flat files, open formats</div><div class="ss">JSON and Markdown on your disk. Readable by you, portable to anything.</div></div></div>
         <div class="li reveal"><div class="av">04</div><div><div class="tt">No account. No telemetry.</div><div class="ss">We don't know who you are, and we like it that way.</div></div></div>
         <div class="li reveal"><div class="av">05</div><div><div class="tt">One-time purchase</div><div class="ss">Bug fixes are always free. Major version upgrades are a separate purchase — no subscription either way.</div></div></div>
-        <div class="li reveal"><div class="av">06</div><div><div class="tt">Fast and light</div><div class="ss">Native-feeling desktop apps that start instantly and stay out of your way.</div></div></div>
+        <div class="li reveal"><div class="av">06</div><div><div class="tt">Fast and light</div><div class="ss">Desktop apps that open fast and stay out of your way.</div></div></div>
       </div>
     </div>
   </section>
@@ -372,7 +372,7 @@
   // live transaction feed — cycles while on screen, pauses off-viewport
   const TX = [
     { tt: 'Grocery Outlet', ss: 'Checking · Mar 4', amt: '−$86.12', neg: true },
-    { tt: 'Sinking fund — Car repairs', ss: 'Transfer · Mar 5', amt: '+$150.00', neg: false },
+    { tt: 'Transfer to savings', ss: 'Transfer · Mar 5', amt: '+$150.00', neg: false },
     { tt: 'Electric bill', ss: 'Bills · Mar 6', amt: '−$114.60', neg: true },
     { tt: 'Freelance invoice', ss: 'Checking · Mar 7', amt: '+$975.00', neg: false },
     { tt: 'Internet', ss: 'Bills · Mar 8', amt: '−$69.99', neg: true },
