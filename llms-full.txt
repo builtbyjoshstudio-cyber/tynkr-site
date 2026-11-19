@@ -2,7 +2,7 @@
 
 > Four privacy-first desktop apps for Windows from Built by Josh Studio LLC, under its Tynkr Tools & Co brand. Everything lives in flat files on your own machine — no cloud, no accounts, no subscriptions. Buy once, own forever. The suite is in development; visitors can get notified at launch.
 
-Tynkr is the desktop software line from Built by Josh Studio (a one-person creative studio in Kansas, incorporated as Built by Josh Studio LLC in 2026; Tynkr Tools & Co is its productivity brand). Each app reads and writes plain files in a folder you choose — open them in any text editor, sync them however you like, or keep them fully offline. The only network request any Tynkr app makes is an optional check for updates, which can be turned off; airplane mode is a supported configuration. All four apps share the same contract: local-first data you own, one-time purchase, no telemetry, no accounts. The apps are not yet released — the marketing site collects launch notifications (via the Tynkr Tools & Co Substack).
+Tynkr is the desktop software line from Built by Josh Studio (a one-person creative studio in Kansas, incorporated as Built by Josh Studio LLC in 2026; Tynkr Tools & Co is its productivity brand). Each app reads and writes plain files in a folder you choose — open them in any text editor, sync them however you like, or keep them fully offline. Microsoft Store copies make no network requests of their own; copies downloaded from the site make only an optional update check (off unless turned on) and a one-time license activation; airplane mode is a supported configuration. All four apps share the same contract: local-first data you own, one-time purchase, no telemetry, no accounts. The apps are not yet released — the marketing site collects launch notifications (via the Tynkr Tools & Co Substack).
 
 This site (tynkr.builtbyjoshstudio.com) covers the desktop apps only. The broader Built by Josh Studio catalog — Notion OS templates, Excel/Google Sheets workbooks, guided print planners, zodiac art, books, and the cookbook — lives at builtbyjoshstudio.com (index: https://builtbyjoshstudio.com/llms.txt). Fuller file for this site: https://tynkr.builtbyjoshstudio.com/llms-full.txt.
 
@@ -45,7 +45,7 @@ A: In plain JSON files in a folder you choose on your own machine — one file p
 Q: Is there a subscription?
 A: No. Ledger is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. There is no account and no recurring billing.
 Q: Does it work offline?
-A: Yes, completely. The only network request Ledger can make is an optional check for updates, which you can turn off. Airplane mode is a supported configuration.
+A: Yes, completely. The Microsoft Store version makes no network requests of its own. A copy downloaded from our site makes only an optional update check, off unless you turn it on, and a one-time license activation if it asks for a key. Airplane mode is a supported configuration.
 Q: Can I get my data out?
 A: It was never locked in. Your ledger is already JSON on your disk, and reports export to CSV. If you stop using Ledger, your files keep working with anything that reads JSON.
 
@@ -62,7 +62,7 @@ A: However you like — the vault is just a folder, so any file sync you already
 Q: Is there a subscription?
 A: No. Vault is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. No account, no recurring billing.
 Q: Does it work offline?
-A: Yes, completely. The only network request Vault can make is an optional check for updates, which you can turn off.
+A: Yes, completely. The Microsoft Store version makes no network requests of its own. A copy downloaded from our site makes only an optional update check, off unless you turn it on, and a one-time license activation if it asks for a key.
 
 ### Tynkr Hearth
 URL: https://tynkr.builtbyjoshstudio.com/hearth/
@@ -92,7 +92,7 @@ A: Forge is built for solo owners and works on one machine at a time. Because th
 Q: Is there a subscription?
 A: No. Forge is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. No account, no recurring billing.
 Q: Does it work offline?
-A: Yes, completely. The only network request Forge can make is an optional check for updates, which you can turn off.
+A: Yes, completely. The Microsoft Store version makes no network requests of its own. A copy downloaded from our site makes only an optional update check, off unless you turn it on, and a one-time license activation if it asks for a key.
 
 ## Shared contract
 
