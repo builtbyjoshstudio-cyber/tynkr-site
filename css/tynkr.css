@@ -305,3 +305,23 @@ a.app-card:hover { color: inherit; text-decoration: none; }
   .mini.enter { animation: none; }
   html { scroll-behavior: auto; }
 }
+
+/* ==========================================================================
+   SCREENSHOT GALLERY (app pages) + full-size dialog
+   ========================================================================== */
+.shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+@media (max-width: 760px) { .shots { grid-template-columns: 1fr; } }
+.shot { display: block; border: var(--hair); border-radius: var(--r); overflow: hidden; background: var(--surface); box-shadow: var(--shadow); color: inherit; cursor: zoom-in; transition: transform .2s, box-shadow .2s; }
+.shot:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); text-decoration: none; }
+.shot:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.shot img { display: block; width: 100%; height: auto; }
+.shot .cap { display: block; padding: 11px 16px; border-top: var(--hair); font-size: 13px; font-weight: 500; color: var(--muted); }
+[data-theme="cosmic"] .shot { background: rgba(18,20,58,.72); border-color: var(--line-2); }
+.shot-frame .shot { border-radius: var(--r); }
+.shot-dialog { padding: 0; border: 0; background: transparent; width: min(96vw, 1600px); max-width: none; max-height: none; overflow: visible; }
+.shot-dialog::backdrop { background: rgba(8, 9, 20, .86); }
+.shot-dialog figure { margin: 0; cursor: zoom-out; }
+.shot-dialog img { display: block; width: 100%; height: auto; max-height: 86vh; object-fit: contain; border-radius: var(--r); }
+.shot-dialog figcaption { padding: 12px 4px 0; text-align: center; color: #fff; font-size: 14px; font-weight: 500; }
+.shot-close { position: absolute; top: -44px; right: 0; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,.4); background: rgba(255,255,255,.12); color: #fff; font-size: 22px; line-height: 1; cursor: pointer; }
+.shot-close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
