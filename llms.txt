@@ -10,7 +10,7 @@ This site (tynkr.builtbyjoshstudio.com) covers the desktop apps only. The broade
 
 - [Tynkr Ledger — Personal Finance OS](https://tynkr.builtbyjoshstudio.com/ledger/): Personal finance on your own disk — transactions, budgets, bills, debt payoff, and net worth. Local-first Windows app; no cloud, no accounts, no subscription.
 - [Tynkr Vault — Second Brain OS](https://tynkr.builtbyjoshstudio.com/vault/): Notes in plain Markdown files you own, with tasks and weekly reviews built in, and search that finds a note by its title (typo-tolerant) or by the words inside it. Local-first Windows app; no cloud, no accounts, no subscription.
-- [Tynkr Hearth — Homebuyer OS](https://tynkr.builtbyjoshstudio.com/hearth/): The whole home purchase mapped — mortgage math, down-payment planning, cash-to-close, roadmap, and document tracker. Local-first Windows app; no cloud, no accounts.
+- [Tynkr Hearth — Homebuyer OS](https://tynkr.builtbyjoshstudio.com/hearth/): The whole home purchase mapped — mortgage math, down-payment planning, cash-to-close, roadmap, and document checklist. Local-first Windows app; no cloud, no accounts.
 - [Tynkr Forge — Small Business OS](https://tynkr.builtbyjoshstudio.com/forge/): Inventory, orders and invoicing for a small shop, with no monthly fee. Features, in order: inventory with stock levels and reorder targets, vendors and purchase orders, customer CRM and sales pipeline, proposals, PDF invoices, projects and time tracking, financial dashboard, contracts, expenses with receipts, and reminders. One local-first Windows app — no cloud, no accounts, no subscription.
 
 ## Site pages
