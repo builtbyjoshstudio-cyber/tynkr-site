@@ -54,7 +54,7 @@ URL: https://tynkr.builtbyjoshstudio.com/vault/
 What it is: Notes in plain Markdown files you own, with tasks and weekly reviews built in. Search finds a note by its title, typos and all, or by the words inside it. Local-first Windows app — no cloud, no accounts, no subscription.
 Platform: Windows · category: BusinessApplication · status: in development (not yet released); one-time purchase when it ships.
 Q: Are my notes stored in a database?
-A: No. Your notes are plain Markdown files in a folder you choose. Vault keeps a local search index for speed, but the files themselves are the source of truth — readable by any editor.
+A: No. Your notes are plain Markdown files in a folder you choose. Vault keeps a local search index for speed, but the files themselves are the source of truth — readable by any editor. If you turn on encryption, the files are encrypted on disk and Vault unlocks them with your password.
 Q: Can I use Vault with an existing folder of Markdown files?
 A: Yes — import them. Choose the .md files you want and Vault copies each one into your vault as a note, titled with its file name. Your original files aren’t moved or changed.
 Q: How do I sync notes between machines?
