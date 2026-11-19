@@ -16,7 +16,7 @@ This site (tynkr.builtbyjoshstudio.com) covers the desktop apps only. The broade
 ## Site pages
 
 - [Tynkr desktop apps — home](https://tynkr.builtbyjoshstudio.com/): The suite overview and launch-notification signup.
-- [Privacy Policy](https://tynkr.builtbyjoshstudio.com/privacy/): The apps collect nothing; this website runs standard analytics only; launch-list emails live on Substack.
+- [Privacy Policy](https://tynkr.builtbyjoshstudio.com/privacy/): The apps collect nothing; this website runs standard analytics only; launch-list emails live on Substack; Etsy, Lemon Squeezy and the Microsoft Store handle their own checkout data; the Microsoft Store shares no buyer names or emails with us.
 - [Website Terms of Use](https://tynkr.builtbyjoshstudio.com/terms/): Terms for this marketing site (the apps ship with their own EULA).
 
 ## Beyond the suite
