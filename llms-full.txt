@@ -56,7 +56,7 @@ Platform: Windows · category: BusinessApplication · status: in development (no
 Q: Are my notes stored in a database?
 A: No. Your notes are plain Markdown files in a folder you choose. Vault keeps a local search index for speed, but the files themselves are the source of truth — readable by any editor.
 Q: Can I use Vault with an existing folder of Markdown files?
-A: Yes. Point Vault at any folder of .md files and it indexes them as-is. Nothing is converted, moved, or renamed.
+A: Yes — import them. Choose the .md files you want and Vault copies each one into your vault as a note, titled with its file name. Your original files aren’t moved or changed.
 Q: How do I sync notes between machines?
 A: However you like — the vault is just a folder, so any file sync you already trust works. Vault itself never syncs anything and never sends your notes anywhere.
 Q: Is there a subscription?

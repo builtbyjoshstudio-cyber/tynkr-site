@@ -35,7 +35,7 @@
 <link rel="stylesheet" href="/css/components.css">
 <link rel="stylesheet" href="/css/tynkr.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tynkr Vault","operatingSystem":"Windows","applicationCategory":"BusinessApplication","description":"Notes in plain Markdown files you own, with tasks and weekly reviews built in. Fuzzy search in milliseconds. Local-first Windows app — no cloud, no accounts, no subscription.","url":"https://tynkr.builtbyjoshstudio.com/vault/","publisher":{"@type":"Organization","@id":"https://builtbyjoshstudio.com/#organization","name":"Built by Josh Studio LLC"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are my notes stored in a database?","acceptedAnswer":{"@type":"Answer","text":"No. Your notes are plain Markdown files in a folder you choose. Vault keeps a local search index for speed, but the files themselves are the source of truth — readable by any editor."}},{"@type":"Question","name":"Can I use Vault with an existing folder of Markdown files?","acceptedAnswer":{"@type":"Answer","text":"Yes. Point Vault at any folder of .md files and it indexes them as-is. Nothing is converted, moved, or renamed."}},{"@type":"Question","name":"How do I sync notes between machines?","acceptedAnswer":{"@type":"Answer","text":"However you like — the vault is just a folder, so any file sync you already trust works. Vault itself never syncs anything and never sends your notes anywhere."}},{"@type":"Question","name":"Is there a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. Vault is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. No account, no recurring billing."}},{"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are my notes stored in a database?","acceptedAnswer":{"@type":"Answer","text":"No. Your notes are plain Markdown files in a folder you choose. Vault keeps a local search index for speed, but the files themselves are the source of truth — readable by any editor."}},{"@type":"Question","name":"Can I use Vault with an existing folder of Markdown files?","acceptedAnswer":{"@type":"Answer","text":"Yes — import them. Choose the .md files you want and Vault copies each one into your vault as a note, titled with its file name. Your original files aren’t moved or changed."}},{"@type":"Question","name":"How do I sync notes between machines?","acceptedAnswer":{"@type":"Answer","text":"However you like — the vault is just a folder, so any file sync you already trust works. Vault itself never syncs anything and never sends your notes anywhere."}},{"@type":"Question","name":"Is there a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. Vault is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. No account, no recurring billing."}},{"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tynkr Tools & Co","item":"https://tynkr.builtbyjoshstudio.com/"},{"@type":"ListItem","position":2,"name":"Tynkr Vault","item":"https://tynkr.builtbyjoshstudio.com/vault/"}]}</script></head>
 <body data-app="vault">
 
@@ -78,9 +78,9 @@
           <div class="tbar"><img data-appfb="vault" src="/assets/tynkr-vault-512.png" alt="" width="512" height="512">Vault</div>
           <div class="body"><div class="bigcols">
       <div class="col">
-        <div class="mini"><div><div class="tt">2026-03-09 — Weekly review</div><div class="ss">reviews/ · edited 2m ago</div></div><span class="badge pos"><span class="d"></span>Done</span></div>
-        <div class="mini"><div><div class="tt">Project Hearth launch notes</div><div class="ss">projects/ · edited 1h ago</div></div><span class="amt">4.2 KB</span></div>
-        <div class="mini"><div><div class="tt">Reading list</div><div class="ss">lists/ · edited yesterday</div></div><span class="amt">1.1 KB</span></div>
+        <div class="mini"><div><div class="tt">2026-03-09 — Weekly review</div><div class="ss">Reviews · edited 2m ago</div></div><span class="badge pos"><span class="d"></span>Done</span></div>
+        <div class="mini"><div><div class="tt">Project Hearth launch notes</div><div class="ss">Projects · edited 1h ago</div></div><span class="amt">4.2 KB</span></div>
+        <div class="mini"><div><div class="tt">Reading list</div><div class="ss">Lists · edited yesterday</div></div><span class="amt">1.1 KB</span></div>
         <div class="noteline a"></div><div class="noteline c"></div><div class="noteline b"></div>
         <div class="tagrow"><span>#weekly-review</span><span>#ideas</span><span>#reading</span><span>#projects</span></div>
       </div>
@@ -110,18 +110,18 @@
         <div class="ftext">
           <span class="eyebrow">Markdown notes</span>
           <h3>Your notes are files. Full stop.</h3>
-          <p>Every note is a plain .md file in a folder you choose. Edit them in Vault, in VS Code, on another machine — they’re yours, and they render everywhere Markdown does.</p>
+          <p>Every note is a plain .md file in a folder you choose, so any Markdown editor can open and read it. Titles, tags and folders are kept in small JSON files alongside.</p>
         </div>
-        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">project-hearth.md</div><div class="ss">projects/ · 4.2 KB</div></div><span class="amt">.md</span></div><div class="mini"><div><div class="tt">weekly-review-2026-03-09.md</div><div class="ss">reviews/ · 2.8 KB</div></div><span class="amt">.md</span></div><div class="noteline a"></div><div class="noteline b"></div></div>
+        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">note-01JCZ8M4Q7RD3K2V9X5T6B1N0F.md</div><div class="ss">Project Hearth launch notes · 4.2 KB</div></div><span class="amt">.md</span></div><div class="mini"><div><div class="tt">note-01JD4R7W2N8X5Q1M3K9T6V0C2H.md</div><div class="ss">Weekly review — Mar 9 · 2.8 KB</div></div><span class="amt">.md</span></div><div class="noteline a"></div><div class="noteline b"></div></div>
       </div>
 
       <div class="featrow flip reveal">
         <div class="ftext">
           <span class="eyebrow">Tasks</span>
-          <h3>Todos that live inside your notes</h3>
-          <p>Any checkbox line in any note becomes a task. Vault collects them into one view with due dates and done-states — no separate task silo to maintain.</p>
+          <h3>Tasks that link to your notes</h3>
+          <p>Tasks with due dates, priorities, and done-states, gathered in one view. Link a task to the note it belongs to, and it shows up alongside that note.</p>
         </div>
-        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">☐ Call the county office</div><div class="ss">due Mar 11 · from hearth-notes.md</div></div><span class="badge plain"><span class="d"></span>Open</span></div><div class="mini"><div><div class="tt">☐ Draft Q2 proposal</div><div class="ss">due Mar 14 · from forge-plan.md</div></div><span class="badge plain"><span class="d"></span>Open</span></div><div class="mini"><div><div class="tt">☑ Send invoice INV-0043</div><div class="ss">done Mar 8</div></div><span class="badge pos"><span class="d"></span>Done</span></div></div>
+        <div class="fdemo" aria-hidden="true"><div class="mini"><div><div class="tt">☐ Call the county office</div><div class="ss">due Mar 11 · Project Hearth launch notes</div></div><span class="badge plain"><span class="d"></span>Open</span></div><div class="mini"><div><div class="tt">☐ Draft Q2 proposal</div><div class="ss">due Mar 14 · Forge plan</div></div><span class="badge plain"><span class="d"></span>Open</span></div><div class="mini"><div><div class="tt">☑ Send invoice INV-0043</div><div class="ss">done Mar 8</div></div><span class="badge pos"><span class="d"></span>Done</span></div></div>
       </div>
 
       <div class="featrow reveal">
@@ -137,7 +137,7 @@
         <div class="ftext">
           <span class="eyebrow">Tags</span>
           <h3>Structure without folders-of-folders</h3>
-          <p>Inline #tags cut across your folder tree. One note can live in a project, a review cycle, and a reading list at once — without copies.</p>
+          <p>Tags cut across your folders. One note can sit in a project folder and carry #weekly-review and #reading at once — without copies.</p>
         </div>
         <div class="fdemo" aria-hidden="true"><div class="tagrow" style="margin:0"><span>#weekly-review</span><span>#ideas</span><span>#reading</span><span>#projects</span><span>#someday</span></div><div class="klabel"><span>#weekly-review</span><b>62 notes</b></div><div class="klabel"><span>#projects</span><b>87 notes</b></div></div>
       </div>
@@ -171,16 +171,18 @@
         <span class="tag">Open formats</span>
       </div>
       <div class="datacols">
-        <p class="dnote reveal">Vault doesn’t import your notes into a database — it works <strong>directly on a folder of plain .md files</strong> you choose. Frontmatter is optional, the format is standard Markdown, and the folder is yours to sync, back up, or grep.<br><br>No proprietary database. No export fee. No account standing between you and your own files. If Vault disappeared tomorrow, this folder still works.</p>
-        <div class="ftree reveal"><b>~/notes/</b>              <i>· any folder you choose</i>
-├─ projects/
-│  ├─ project-hearth.md
-│  └─ forge-plan.md
-├─ reviews/
-│  └─ weekly-review-2026-03-09.md
-├─ lists/
-│  └─ reading-list.md
-└─ inbox.md              <i>· plain Markdown, no lock-in</i></div>
+        <p class="dnote reveal">Vault doesn’t import your notes into a database — it works <strong>directly on a folder of plain .md files</strong> you choose. The format is standard Markdown, and the folder is yours to sync and back up. If you turn on encryption, the files are encrypted on disk.<br><br>No proprietary database. No export fee. No account standing between you and your own files. If Vault disappeared tomorrow, this folder still works.</p>
+        <div class="ftree reveal"><b>Documents/Tynkr Vault/</b> <i>· or any folder</i>
+├─ notes/
+│  └─ note-&lt;id&gt;.md      <i>· one file per note</i>
+├─ notes.json           <i>· titles, tags, folders</i>
+├─ tags.json
+├─ folders.json
+├─ tasks.json
+├─ inbox.json
+├─ templates/
+├─ versions/            <i>· earlier copies of notes</i>
+└─ attachments/</div>
       </div>
     </div>
   </section>
@@ -196,7 +198,7 @@
       <div class="faq">
         <details class="reveal"><summary>Are my notes stored in a database?</summary><p>No. Your notes are plain Markdown files in a folder you choose. Vault keeps a local search index for speed, but the files themselves are the source of truth — readable by any editor.</p></details>
 
-        <details class="reveal"><summary>Can I use Vault with an existing folder of Markdown files?</summary><p>Yes. Point Vault at any folder of .md files and it indexes them as-is. Nothing is converted, moved, or renamed.</p></details>
+        <details class="reveal"><summary>Can I use Vault with an existing folder of Markdown files?</summary><p>Yes — import them. Choose the .md files you want and Vault copies each one into your vault as a note, titled with its file name. Your original files aren’t moved or changed.</p></details>
 
         <details class="reveal"><summary>How do I sync notes between machines?</summary><p>However you like — the vault is just a folder, so any file sync you already trust works. Vault itself never syncs anything and never sends your notes anywhere.</p></details>
 
