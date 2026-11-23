@@ -69,7 +69,7 @@
       <p class="hero-sub">The entire home purchase, mapped — mortgage math, down payment planning, cash-to-close, and your key documents tracked in one private place.</p>
       <div class="hero-cta">
         <a class="btn primary" href="#beta">Get notified <span class="arr">→</span></a>
-        <a class="btn ghost" href="/">See all four apps</a>
+        <a class="btn ghost" href="/">See all five apps</a>
       </div>
 
       <!-- what it looks like — swap .appwin.big for <img> screenshot later, same frame -->
@@ -291,6 +291,14 @@
           </div>
           <p class="desc">Inventory, orders and invoicing, with no monthly fee.</p>
         </a>
+
+        <a class="app-card more-card reveal" style="--ac:var(--c-inkpress)" href="/inkpress/">
+          <div class="app-head">
+            <img data-appfb="inkpress" src="/assets/tynkr-inkpress-300.png" alt="Tynkr Inkpress icon" width="300" height="300">
+            <div><span class="name">Tynkr Inkpress</span><span class="os">Book Formatting</span></div>
+          </div>
+          <p class="desc">EPUB 3 ebooks, KDP print PDFs and author-site pages from your manuscript.</p>
+        </a>
       </div>
     </div>
   </section>
@@ -466,7 +474,7 @@
   // Runs on the error event AND on images that already 404'd before this
   // script attached (complete && naturalWidth === 0), so the fallback is
   // reliable regardless of when the failed load resolves.
-  const FB = { ledger: 'var(--c-ledger)', vault: 'var(--c-vault)', hearth: 'var(--c-hearth)', forge: 'var(--c-forge)', tools: 'var(--accent)' };
+  const FB = { ledger: 'var(--c-ledger)', vault: 'var(--c-vault)', hearth: 'var(--c-hearth)', forge: 'var(--c-forge)', inkpress: 'var(--c-inkpress)', tools: 'var(--accent)' };
   function appFallback(img) {
     if (!img.parentNode) return;
     const app = img.dataset.appfb;
