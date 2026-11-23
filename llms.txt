@@ -24,7 +24,7 @@ This site (tynkr.builtbyjoshstudio.com) covers the desktop apps only. The broade
 - [Built by Josh Studio](https://builtbyjoshstudio.com/): The parent studio — Notion templates, spreadsheet workbooks, guided planners, zodiac art, books, cookbook.
 - [Kitchen & cooking tools](https://cooking.builtbyjoshstudio.com/tools/): Free browser calculators for the kitchen.
 - [Money & business tools](https://tools.builtbyjoshstudio.com/money/): Free browser calculators for personal finance and small business.
-- [Tabletop & RPG tools](https://tools.builtbyjoshstudio.com/tabletop/): Free browser tools for game night — initiative tracker, dice roller, session notes, generators, wargame scorer.
+- [Tabletop & RPG tools](https://writing.builtbyjoshstudio.com/tabletop/): Free browser tools for game night — initiative tracker, dice roller, session notes, generators, wargame scorer.
 - [Tynkr Tools & Co newsletter on Substack](https://tynkrtoolsco.substack.com/): Launch notifications and studio news.
 
 ## Contact
