@@ -111,7 +111,7 @@ A: Windows 10 version 2004 (build 19041) or later on 64-bit (x64) Windows, with 
 Q: Does Inkpress write, edit, or build full paperback cover wraps?
 A: No. Inkpress lays out your book — it does not write, edit or proofread your prose, and it does not create full wraparound paperback covers. It can generate a typographic ebook cover from your title and author (or use your own JPG, PNG or SVG cover), and gives you estimated page count, spine width and inside gutter while you format. Always check the final print PDF in KDP's own previewer before publishing.
 Q: Is there a subscription or in-app upgrade?
-A: No. Tynkr Inkpress is coming soon to the Microsoft Store as a one-time purchase with every edition, font pairing, border option and export format included. There are no in-app purchases, no licence keys to enter and no recurring billing; updates arrive through the Microsoft Store.
+A: No. Tynkr Inkpress is coming soon to the Microsoft Store as a one-time purchase with every edition, font pairing, border option and export format included. There are no in-app purchases, no license keys to enter and no recurring billing; updates arrive through the Microsoft Store.
 
 ## Shared contract
 

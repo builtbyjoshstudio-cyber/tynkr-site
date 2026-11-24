@@ -168,6 +168,9 @@ html.js .reveal.in { opacity: 1; transform: none; }
 /* --- app cards ----------------------------------------------------------------- */
 .apps-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
 @media (max-width: 860px) { .apps-grid { grid-template-columns: 1fr; } }
+@media (min-width: 861px) {
+  .apps-grid:not(.more-grid) > .app-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
 .app-card {
   --ac: var(--accent);
   border: var(--hair); border-radius: var(--r); background: var(--surface);
