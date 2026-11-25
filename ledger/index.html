@@ -20,9 +20,11 @@
 <meta property="og:image" content="https://tynkr.builtbyjoshstudio.com/assets/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Tynkr Tools & Co — Your data. Your machine. Your business.">
+<meta property="og:image:alt" content="Tynkr Ledger — Local-first personal finance desktop app for Windows.">
 <meta property="og:site_name" content="Tynkr Tools & Co">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tynkr Ledger — Local-First Personal Finance OS for Windows">
+<meta name="twitter:description" content="Personal finance on your own disk: transactions, budgets, bills, debt payoff, net worth. Local-first Windows app — no cloud, no accounts, no subscription.">
 <meta name="twitter:image" content="https://tynkr.builtbyjoshstudio.com/assets/og-card.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -34,9 +36,151 @@
 <link rel="stylesheet" href="/css/tokens.css">
 <link rel="stylesheet" href="/css/components.css">
 <link rel="stylesheet" href="/css/tynkr.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tynkr Ledger","operatingSystem":"Windows","applicationCategory":"FinanceApplication","description":"Personal finance on your own disk: transactions, budgets, bills, debt payoff, net worth. Local-first Windows app — no cloud, no accounts, no subscription.","url":"https://tynkr.builtbyjoshstudio.com/ledger/","publisher":{"@type":"Organization","@id":"https://builtbyjoshstudio.com/#organization","name":"Built by Josh Studio LLC"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Ledger connect to my bank?","acceptedAnswer":{"@type":"Answer","text":"No. Ledger never asks for bank credentials and makes no network requests to financial institutions. You import transactions by downloading a CSV, OFX or QFX file from your bank’s website and opening it in Ledger."}},{"@type":"Question","name":"Where is my financial data stored?","acceptedAnswer":{"@type":"Answer","text":"In JSON files in a folder you choose on your own machine — one file per year of transactions, plus files for budgets, bills, debts and settings. You can open, back up, or move them with any tool. If you turn on optional encryption, the files are encrypted with your password."}},{"@type":"Question","name":"Is there a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. Ledger is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. There is no account and no recurring billing."}},{"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online. Airplane mode is a supported configuration."}},{"@type":"Question","name":"Can I get my data out?","acceptedAnswer":{"@type":"Answer","text":"It was never locked in. Your data is already JSON on your disk (or encrypted JSON, if you turn encryption on), and you can back it all up as a single file anytime. If you stop using Ledger, your files keep working with anything that reads JSON."}}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tynkr Tools & Co","item":"https://tynkr.builtbyjoshstudio.com/"},{"@type":"ListItem","position":2,"name":"Tynkr Ledger","item":"https://tynkr.builtbyjoshstudio.com/ledger/"}]}</script></head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://builtbyjoshstudio.com/#organization",
+      "name": "Built by Josh Studio LLC",
+      "legalName": "Built by Josh Studio LLC",
+      "url": "https://builtbyjoshstudio.com/",
+      "email": "mailto:support@builtbyjoshstudio.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tynkr.builtbyjoshstudio.com/assets/tynkr-tools-512.png",
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://tynkr.builtbyjoshstudio.com/#website",
+      "name": "Tynkr Tools & Co",
+      "url": "https://tynkr.builtbyjoshstudio.com/",
+      "description": "Five local-first desktop apps for Windows — Ledger, Vault, Hearth, Forge, and Inkpress. Ordinary files on your PC; no cloud, accounts, or fees.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://builtbyjoshstudio.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Tynkr Tools & Co",
+          "item": "https://tynkr.builtbyjoshstudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tynkr Ledger",
+          "item": "https://tynkr.builtbyjoshstudio.com/ledger/"
+        }
+      ],
+      "@id": "https://tynkr.builtbyjoshstudio.com/ledger/#breadcrumb"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://tynkr.builtbyjoshstudio.com/ledger/#webpage",
+      "url": "https://tynkr.builtbyjoshstudio.com/ledger/",
+      "name": "Tynkr Ledger — Local-First Personal Finance OS for Windows",
+      "description": "Personal finance on your own disk: transactions, budgets, bills, debt payoff, net worth. Local-first Windows app — no cloud, no accounts, no subscription.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/ledger/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/ledger/#app"
+      },
+      "primaryImageOfPage": "https://tynkr.builtbyjoshstudio.com/assets/og-card.png"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://tynkr.builtbyjoshstudio.com/ledger/#app",
+      "name": "Tynkr Ledger",
+      "operatingSystem": "Windows",
+      "applicationCategory": "FinanceApplication",
+      "description": "Personal finance on your own disk: transactions, budgets, bills, debt payoff, net worth. Local-first Windows app — no cloud, no accounts, no subscription.",
+      "url": "https://tynkr.builtbyjoshstudio.com/ledger/",
+      "image": "https://tynkr.builtbyjoshstudio.com/assets/tynkr-ledger-300.png",
+      "screenshot": [
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/ledger-01-command-center.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/ledger-03-transactions.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/ledger-04-debt-payoff.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/ledger-09-command-center-dark.png"
+      ],
+      "featureList": [
+        "CSV, OFX, and QFX bank transaction import with duplicate skipping",
+        "Monthly category budgets with 50/30/20 view and rollover",
+        "Recurring bills tracking with due dates and autopay flags",
+        "Avalanche and snowball debt payoff planner",
+        "Monthly net worth snapshots and sinking funds",
+        "PDF reports, CSV tax summary export, and optional password encryption"
+      ],
+      "publisher": {
+        "@id": "https://builtbyjoshstudio.com/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/#website"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Ledger connect to my bank?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Ledger never asks for bank credentials and makes no network requests to financial institutions. You import transactions by downloading a CSV, OFX or QFX file from your bank’s website and opening it in Ledger."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is my financial data stored?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In JSON files in a folder you choose on your own machine — one file per year of transactions, plus files for budgets, bills, debts and settings. You can open, back up, or move them with any tool. If you turn on optional encryption, the files are encrypted with your password."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Ledger is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. There is no account and no recurring billing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online. Airplane mode is a supported configuration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get my data out?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It was never locked in. Your data is already JSON on your disk (or encrypted JSON, if you turn encryption on), and you can back it all up as a single file anytime. If you stop using Ledger, your files keep working with anything that reads JSON."
+          }
+        }
+      ],
+      "@id": "https://tynkr.builtbyjoshstudio.com/ledger/#faq"
+    }
+  ]
+}
+</script>
+</head>
 <body data-app="ledger">
 
 <!-- ===== TOP BAR ===== -->
@@ -204,6 +348,21 @@
 ├─ config.json             <i>· budget plan, categories, rules</i>
 └─ attachments/            <i>· receipts you attach</i></div>
       </div>
+      <div class="spec-wrap reveal">
+        <table class="spec-table spec-table--kv">
+          <caption>Tynkr Ledger — At a glance</caption>
+          <tbody>
+            <tr><th scope="row">Platform</th><td>Windows (desktop)</td></tr>
+            <tr><th scope="row">Focus</th><td>Personal Finance OS — transactions, 50/30/20 budgets, bills, debt payoff, sinking funds, net worth, reports</td></tr>
+            <tr><th scope="row">Imports &amp; exports</th><td>Imports bank CSV, OFX, and QFX; exports PDF reports, CSV tax summary, and single-file backup</td></tr>
+            <tr><th scope="row">On-disk storage</th><td>JSON files (yearly transactions, monthly budgets, accounts, bills, debts, config) + <code>attachments/</code> in a folder you choose</td></tr>
+            <tr><th scope="row">Network activity</th><td>100% offline — makes no network calls of its own; no bank connections, accounts, or telemetry</td></tr>
+            <tr><th scope="row">Encryption</th><td>Optional password encryption on disk (password and recovery key stay on your device)</td></tr>
+            <tr><th scope="row">Purchase model</th><td>Pay-once model (one-time purchase); free bug fixes; major version upgrades separate; no subscription</td></tr>
+            <tr><th scope="row">Distribution &amp; status</th><td>In development — coming soon exclusively through the Microsoft Store</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
@@ -290,11 +449,13 @@
     </div>
   </section>
 
+</main>
+
   <div class="wrap">
-    <div class="foot">
+    <footer class="foot">
       <span class="fb"><img data-appfb="tools" src="/assets/tynkr-tools-512.png" alt="" width="512" height="512">TYNKR TOOLS &amp; CO · BUILT BY JOSH STUDIO</span>
       <span>YOUR DATA · YOUR MACHINE · YOUR BUSINESS</span><span><a href="/privacy/">PRIVACY</a> · <a href="/terms/">TERMS</a></span><span style="flex-basis:100%;opacity:.8;">Tynkr apps are planning tools — not financial, tax, or legal advice. Verify figures with your own records and professionals.</span>
-    </div>
+    </footer>
     <nav aria-label="More from Built by Josh Studio" class="studio-links">
       <span>More from the studio:</span>
       <a href="https://builtbyjoshstudio.com/">Built by Josh Studio</a>
@@ -305,8 +466,6 @@
       <a href="https://littleacrelearning.com/">Little Acre Learning</a>
     </nav>
   </div>
-
-</main>
 
 <script src="/js/shots.js" defer></script>
 <script>

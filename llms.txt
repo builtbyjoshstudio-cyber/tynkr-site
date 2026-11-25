@@ -1,28 +1,39 @@
 # Tynkr Tools & Co — Desktop App Suite
 
-> Five privacy-first desktop apps for Windows from Built by Josh Studio LLC, under its Tynkr Tools & Co brand. Everything lives in ordinary files on your own machine — no cloud, no accounts, no subscriptions. Buy once, own forever. The suite is in development; visitors can get notified at launch.
+> Five local-first desktop apps for Windows — Ledger, Vault, Hearth, Forge, and Inkpress. Ordinary files on your PC; no cloud, accounts, or fees.
 
-Tynkr is the desktop software line from Built by Josh Studio (a one-person creative studio in Kansas, incorporated as Built by Josh Studio LLC in 2026; Tynkr Tools & Co is its productivity brand). Each app stores your work in files on your machine — open them, move them, or back them up yourself. None of the apps send us your data, and there are no accounts, telemetry or analytics. Tynkr Ledger, Vault, Hearth and Forge make no network calls of their own; Tynkr Inkpress makes no network calls of its own except downloading remote images linked by a manuscript during print PDF export (and uses Windows WebView2 and Microsoft Edge or Google Chrome for PDF export). Microsoft handles the purchase, license, and updates through the Microsoft Store. All five apps share the same contract: your files on your machine, one-time purchase, no telemetry, no accounts. The apps are not yet released — the marketing site collects launch notifications (via the Tynkr Tools & Co Substack).
+Tynkr is the desktop software line from Built by Josh Studio LLC, under its Tynkr Tools & Co brand. Each app stores your work in ordinary files on your own machine — open them, move them, or back them up yourself. None of the apps send us your data, and there are no accounts, telemetry, or analytics. The suite is in development and coming soon to the Microsoft Store; visitors can request launch notifications on Substack.
 
-This site (tynkr.builtbyjoshstudio.com) covers the desktop apps only. The broader Built by Josh Studio catalog — Notion OS templates, Excel/Google Sheets workbooks, guided print planners, zodiac art, books, and the cookbook — lives at builtbyjoshstudio.com (index: https://builtbyjoshstudio.com/llms.txt). Fuller file for this site: https://tynkr.builtbyjoshstudio.com/llms-full.txt.
+## About & Authority
+
+- **Publisher:** Built by Josh Studio LLC (Kansas Business ID 10076138, Kansas), publishing desktop applications under the **Tynkr Tools & Co** brand.
+- **Canonical Site:** https://tynkr.builtbyjoshstudio.com/
+- **Parent Catalog:** https://builtbyjoshstudio.com/ ([llms.txt](https://builtbyjoshstudio.com/llms.txt))
+- **Support Email:** support@builtbyjoshstudio.com
+- **Pay-Once Model:** Every app is a one-time purchase through the Microsoft Store when it launches. Bug fixes are always free; major version upgrades are a separate purchase. There are no subscriptions, no accounts, and no recurring billing.
+- **Architecture & Network Distinction:**
+  - **Tynkr Ledger, Vault, Hearth, and Forge:** 100% offline Windows desktop apps that make zero network calls of their own (Microsoft handles Store purchase, licensing, and updates). Data is stored in ordinary JSON / Markdown files in a folder you choose, with optional password encryption on disk.
+  - **Tynkr Inkpress:** Windows 10 version 2004 (build 19041) or later (x64) desktop app with no account, telemetry, or analytics sent to us. Its own code makes no network calls except downloading remote web-linked images during print PDF export (use local images to avoid any connection); it uses Microsoft Edge WebView2 (which includes SmartScreen) and Edge or Chrome for print PDF export. Files in `Documents\Tynkr Inkpress` and per-book `.inkpress.json` sidecars are not encrypted (protected by your Windows account).
+
+This site (`tynkr.builtbyjoshstudio.com`) covers the desktop apps only. Broader studio products (Notion OS templates, Excel/Google Sheets workbooks, guided print planners, zodiac art, books, and cookbook) live at `builtbyjoshstudio.com`. Fuller file for this site: https://tynkr.builtbyjoshstudio.com/llms-full.txt.
 
 ## The apps
 
-- [Tynkr Ledger — Personal Finance OS](https://tynkr.builtbyjoshstudio.com/ledger/): Personal finance on your own disk — transactions, budgets, bills, debt payoff, and net worth. Local-first Windows app; no cloud, no accounts, no subscription.
-- [Tynkr Vault — Second Brain OS](https://tynkr.builtbyjoshstudio.com/vault/): Notes in plain Markdown files you own, with tasks and weekly reviews built in, and search that finds a note by its title (typo-tolerant) or by the words inside it. Local-first Windows app; no cloud, no accounts, no subscription.
-- [Tynkr Hearth — Homebuyer OS](https://tynkr.builtbyjoshstudio.com/hearth/): The whole home purchase mapped — mortgage math, down-payment planning, cash-to-close, roadmap, and document checklist. Local-first Windows app; no cloud, no accounts.
-- [Tynkr Forge — Small Business OS](https://tynkr.builtbyjoshstudio.com/forge/): Inventory, orders and invoicing for a small shop, with no monthly fee. Features, in order: inventory with stock levels and reorder targets, vendors and purchase orders, customer CRM and sales pipeline, proposals, PDF invoices, projects and time tracking, financial dashboard, contracts, expenses with receipts, and reminders. One local-first Windows app — no cloud, no accounts, no subscription.
-- [Tynkr Inkpress — Book Formatting](https://tynkr.builtbyjoshstudio.com/inkpress/): Turn your manuscript into an EPUB 3 ebook, a print PDF at KDP paperback trim sizes and a web page for your author site. Choose a clean, styled or framed look (Ashveil, Systemfall, Sootline), check live print and ebook previews and preflight checks, and keep your work on your own PC — no account, no telemetry, no subscription.
+- [Tynkr Ledger — Personal Finance OS](https://tynkr.builtbyjoshstudio.com/ledger/): Personal finance on your own disk: transactions, budgets, bills, debt payoff, net worth. Local-first Windows app — no cloud, no accounts, no subscription.
+- [Tynkr Vault — Second Brain OS](https://tynkr.builtbyjoshstudio.com/vault/): Notes in plain Markdown files you own, with tasks, weekly reviews, and typo-tolerant search. Local-first Windows app — no cloud or subscription.
+- [Tynkr Hearth — Homebuyer OS](https://tynkr.builtbyjoshstudio.com/hearth/): Map your home purchase on your own PC: mortgage math, loan comparison, cash-to-close, roadmap, and document checklist. Local-first Windows app.
+- [Tynkr Forge — Small Business OS](https://tynkr.builtbyjoshstudio.com/forge/): Inventory, orders and invoicing for a small shop, with no monthly fee — one local-first Windows app. No cloud, no accounts, no subscription. Features, in order: inventory with stock levels and reorder targets, vendors and purchase orders, customer CRM and sales pipeline, proposals, PDF invoices, projects and time tracking, financial dashboard, contracts, expenses with receipts, and reminders.
+- [Tynkr Inkpress — Book Formatting](https://tynkr.builtbyjoshstudio.com/inkpress/): Format manuscripts into EPUB 3 ebooks, KDP paperback print PDFs, and author-site web pages with live previews. Local-first Windows desktop app with Clean, Styled, and three framed editions (Ashveil, Systemfall, Sootline).
 
 ## Site pages
 
-- [Tynkr desktop apps — home](https://tynkr.builtbyjoshstudio.com/): The suite overview and launch-notification signup.
+- [Tynkr desktop apps — home](https://tynkr.builtbyjoshstudio.com/): Suite overview, comparison table, Suite FAQ, and launch-notification signup.
 - [Privacy Policy](https://tynkr.builtbyjoshstudio.com/privacy/): The apps collect nothing; this website runs standard analytics only; launch-list emails live on Substack; Etsy, Lemon Squeezy and the Microsoft Store handle their own checkout data; the Microsoft Store shares no buyer names or emails with us.
 - [Website Terms of Use](https://tynkr.builtbyjoshstudio.com/terms/): Terms for this marketing site (the apps ship with their own EULA).
 
 ## Beyond the suite
 
-- [Built by Josh Studio](https://builtbyjoshstudio.com/): The parent studio — Notion templates, spreadsheet workbooks, guided planners, zodiac art, books, cookbook.
+- [Built by Josh Studio](https://builtbyjoshstudio.com/): Parent studio — Notion templates, spreadsheet workbooks, guided planners, zodiac art, books, cookbook.
 - [Kitchen & cooking tools](https://cooking.builtbyjoshstudio.com/tools/): Free browser calculators for the kitchen.
 - [Money & business tools](https://tools.builtbyjoshstudio.com/money/): Free browser calculators for personal finance and small business.
 - [Tabletop & RPG tools](https://writing.builtbyjoshstudio.com/tabletop/): Free browser tools for game night — initiative tracker, dice roller, session notes, generators, wargame scorer.

@@ -12,17 +12,19 @@
 </script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tynkr Inkpress — Book Formatting for Windows</title>
-<meta name="description" content="Turn your manuscript into an EPUB 3 ebook, a print PDF at KDP paperback trim sizes and a web page for your author site. Choose a clean, styled or framed look, check it in a live page preview, and keep your work on your own PC.">
+<meta name="description" content="Format manuscripts into EPUB 3 ebooks, KDP paperback print PDFs, and author-site web pages with live previews. Local-first Windows desktop app.">
 <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://tynkr.builtbyjoshstudio.com/inkpress/">
 <meta property="og:title" content="Tynkr Inkpress — Book Formatting for Windows">
-<meta property="og:description" content="Turn your manuscript into an EPUB 3 ebook, a print PDF at KDP paperback trim sizes and a web page for your author site. Choose a clean, styled or framed look, check it in a live page preview, and keep your work on your own PC.">
+<meta property="og:description" content="Format manuscripts into EPUB 3 ebooks, KDP paperback print PDFs, and author-site web pages with live previews. Local-first Windows desktop app.">
 <meta property="og:image" content="https://tynkr.builtbyjoshstudio.com/assets/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Tynkr Tools & Co — Your data. Your machine. Your business.">
+<meta property="og:image:alt" content="Tynkr Inkpress — Local-first book formatting desktop app for Windows.">
 <meta property="og:site_name" content="Tynkr Tools & Co">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tynkr Inkpress — Book Formatting for Windows">
+<meta name="twitter:description" content="Format manuscripts into EPUB 3 ebooks, KDP paperback print PDFs, and author-site web pages with live previews. Local-first Windows desktop app.">
 <meta name="twitter:image" content="https://tynkr.builtbyjoshstudio.com/assets/og-card.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -34,9 +36,159 @@
 <link rel="stylesheet" href="/css/tokens.css">
 <link rel="stylesheet" href="/css/components.css">
 <link rel="stylesheet" href="/css/tynkr.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tynkr Inkpress","operatingSystem":"Windows","applicationCategory":"DesignApplication","description":"Turn your manuscript into an EPUB 3 ebook, a print PDF at KDP paperback trim sizes and a web page for your author site. Choose a clean, styled or framed look, check it in a live page preview, and keep your work on your own PC.","url":"https://tynkr.builtbyjoshstudio.com/inkpress/","publisher":{"@type":"Organization","@id":"https://builtbyjoshstudio.com/#organization","name":"Built by Josh Studio LLC"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which manuscript formats can Inkpress open, and does it change my file?","acceptedAnswer":{"@type":"Answer","text":"Inkpress opens Word (.docx or .doc), Google Docs (.odt or .docx download), PDF, Markdown and plain-text files. Your original manuscript is never modified — when you save changes in your usual editor, Inkpress reloads the manuscript automatically, and saves each book's layout settings in a .inkpress.json sidecar file next to it."}},{"@type":"Question","name":"How does Inkpress handle privacy, internet access and SmartScreen?","acceptedAnswer":{"@type":"Answer","text":"Inkpress has no account, no telemetry and no analytics, and it sends nothing to us. The app's own code makes no network connections, with one exception: when you make a print PDF, any image your manuscript links to on the web is downloaded from the site that hosts it so it appears in the PDF (that site can see your IP address). The live preview loads nothing from the internet, and the EPUB leaves web images out — use images stored on your PC to avoid any connection. The window uses the Microsoft Edge WebView2 Runtime, which sends diagnostic data to Microsoft under your Windows diagnostic-data settings and includes Microsoft Defender SmartScreen, and print PDF export runs Microsoft Edge or Google Chrome in the background under their own privacy terms."}},{"@type":"Question","name":"Where are my files stored, and are they encrypted?","acceptedAnswer":{"@type":"Answer","text":"Preferences, your recent-books list, the sample book and default exports stay in Documents\\Tynkr Inkpress, and each book's settings live in a .inkpress.json file next to its manuscript. These are ordinary files protected by your Windows account — Inkpress does not encrypt them, and uninstalling Inkpress does not remove them."}},{"@type":"Question","name":"What are the Windows requirements?","acceptedAnswer":{"@type":"Answer","text":"Windows 10 version 2004 (build 19041) or later on 64-bit (x64) Windows, with a display that fits a 1100 × 720 window (English-language interface). The UI uses Microsoft Edge WebView2 (preinstalled on Windows 11 and most Windows 10 PCs), and print PDF export uses Microsoft Edge (included with Windows) or Google Chrome. Other export formats need no browser."}},{"@type":"Question","name":"Does Inkpress write, edit, or build full paperback cover wraps?","acceptedAnswer":{"@type":"Answer","text":"No. Inkpress lays out your book — it does not write, edit or proofread your prose, and it does not create full wraparound paperback covers. It can generate a typographic ebook cover from your title and author (or use your own JPG, PNG or SVG cover), and gives you estimated page count, spine width and inside gutter while you format. Always check the final print PDF in KDP's own previewer before publishing."}},{"@type":"Question","name":"Is there a subscription or in-app upgrade?","acceptedAnswer":{"@type":"Answer","text":"No. Tynkr Inkpress is coming soon to the Microsoft Store as a one-time purchase with every edition, font pairing, border option and export format included. There are no in-app purchases, no license keys to enter and no recurring billing; updates arrive through the Microsoft Store."}}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tynkr Tools & Co","item":"https://tynkr.builtbyjoshstudio.com/"},{"@type":"ListItem","position":2,"name":"Tynkr Inkpress","item":"https://tynkr.builtbyjoshstudio.com/inkpress/"}]}</script></head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://builtbyjoshstudio.com/#organization",
+      "name": "Built by Josh Studio LLC",
+      "legalName": "Built by Josh Studio LLC",
+      "url": "https://builtbyjoshstudio.com/",
+      "email": "mailto:support@builtbyjoshstudio.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tynkr.builtbyjoshstudio.com/assets/tynkr-tools-512.png",
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://tynkr.builtbyjoshstudio.com/#website",
+      "name": "Tynkr Tools & Co",
+      "url": "https://tynkr.builtbyjoshstudio.com/",
+      "description": "Five local-first desktop apps for Windows — Ledger, Vault, Hearth, Forge, and Inkpress. Ordinary files on your PC; no cloud, accounts, or fees.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://builtbyjoshstudio.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Tynkr Tools & Co",
+          "item": "https://tynkr.builtbyjoshstudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tynkr Inkpress",
+          "item": "https://tynkr.builtbyjoshstudio.com/inkpress/"
+        }
+      ],
+      "@id": "https://tynkr.builtbyjoshstudio.com/inkpress/#breadcrumb"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://tynkr.builtbyjoshstudio.com/inkpress/#webpage",
+      "url": "https://tynkr.builtbyjoshstudio.com/inkpress/",
+      "name": "Tynkr Inkpress — Book Formatting for Windows",
+      "description": "Format manuscripts into EPUB 3 ebooks, KDP paperback print PDFs, and author-site web pages with live previews. Local-first Windows desktop app.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/inkpress/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/inkpress/#app"
+      },
+      "primaryImageOfPage": "https://tynkr.builtbyjoshstudio.com/assets/og-card.png"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://tynkr.builtbyjoshstudio.com/inkpress/#app",
+      "name": "Tynkr Inkpress",
+      "operatingSystem": "Windows 10 version 2004 (build 19041) or later (x64)",
+      "applicationCategory": "DesignApplication",
+      "description": "Format manuscripts into EPUB 3 ebooks, KDP paperback print PDFs, and author-site web pages with live previews. Local-first Windows desktop app.",
+      "url": "https://tynkr.builtbyjoshstudio.com/inkpress/",
+      "image": "https://tynkr.builtbyjoshstudio.com/assets/tynkr-inkpress-300.png",
+      "screenshot": [
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/inkpress-01-ashveil-print-spread.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/inkpress-04-sootline-dark.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/inkpress-02-edition-picker.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/inkpress-05-ebook-preview.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/inkpress-06-trim-paper-kdp-preflight.png"
+      ],
+      "featureList": [
+        "Imports Word (.docx/.doc), Google Docs (.odt/.docx), PDF, Markdown, and plain text without modifying originals",
+        "Exports EPUB 3 ebooks, KDP paperback print PDFs, author-site web pages, and delivery ZIPs",
+        "Clean, Styled, and three framed editions (Ashveil, Systemfall, Sootline)",
+        "Live print and ebook previews with KDP preflight checks",
+        "Front and back matter builder, typographic or custom ebook covers, and .inkpress.json sidecar settings"
+      ],
+      "publisher": {
+        "@id": "https://builtbyjoshstudio.com/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/#website"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which manuscript formats can Inkpress open, and does it change my file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inkpress opens Word (.docx or .doc), Google Docs (.odt or .docx download), PDF, Markdown and plain-text files. Your original manuscript is never modified — when you save changes in your usual editor, Inkpress reloads the manuscript automatically, and saves each book's layout settings in a .inkpress.json sidecar file next to it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Inkpress handle privacy, internet access and SmartScreen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inkpress has no account, no telemetry and no analytics, and it sends nothing to us. The app's own code makes no network connections, with one exception: when you make a print PDF, any image your manuscript links to on the web is downloaded from the site that hosts it so it appears in the PDF (that site can see your IP address). The live preview loads nothing from the internet, and the EPUB leaves web images out — use images stored on your PC to avoid any connection. The window uses the Microsoft Edge WebView2 Runtime, which sends diagnostic data to Microsoft under your Windows diagnostic-data settings and includes Microsoft Defender SmartScreen, and print PDF export runs Microsoft Edge or Google Chrome in the background under their own privacy terms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are my files stored, and are they encrypted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Preferences, your recent-books list, the sample book and default exports stay in Documents\\Tynkr Inkpress, and each book's settings live in a .inkpress.json file next to its manuscript. These are ordinary files protected by your Windows account — Inkpress does not encrypt them, and uninstalling Inkpress does not remove them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the Windows requirements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Windows 10 version 2004 (build 19041) or later on 64-bit (x64) Windows, with a display that fits a 1100 × 720 window (English-language interface). The UI uses Microsoft Edge WebView2 (preinstalled on Windows 11 and most Windows 10 PCs), and print PDF export uses Microsoft Edge (included with Windows) or Google Chrome. Other export formats need no browser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Inkpress write, edit, or build full paperback cover wraps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Inkpress lays out your book — it does not write, edit or proofread your prose, and it does not create full wraparound paperback covers. It can generate a typographic ebook cover from your title and author (or use your own JPG, PNG or SVG cover), and gives you estimated page count, spine width and inside gutter while you format. Always check the final print PDF in KDP's own previewer before publishing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a subscription or in-app upgrade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Tynkr Inkpress is coming soon to the Microsoft Store as a one-time purchase with every edition, font pairing, border option and export format included. There are no in-app purchases, no license keys to enter and no recurring billing; updates arrive through the Microsoft Store."
+          }
+        }
+      ],
+      "@id": "https://tynkr.builtbyjoshstudio.com/inkpress/#faq"
+    }
+  ]
+}
+</script>
+</head>
 <body data-app="inkpress">
 
 <!-- ===== TOP BAR ===== -->
@@ -192,6 +344,21 @@
 ├─ &lt;book&gt;.docx               <i>· original file, never modified</i>
 └─ &lt;book&gt;.inkpress.json      <i>· saved book settings</i></div>
       </div>
+      <div class="spec-wrap reveal">
+        <table class="spec-table spec-table--kv">
+          <caption>Tynkr Inkpress — At a glance</caption>
+          <tbody>
+            <tr><th scope="row">Platform &amp; display</th><td>Windows 10 version 2004 (build 19041) or later (x64); minimum 1100 × 720 display; English-language interface</td></tr>
+            <tr><th scope="row">Focus</th><td>Book Formatting — Clean, Styled, and 3 framed editions (Ashveil, Systemfall, Sootline), 6 font pairings, live print &amp; ebook previews, KDP preflight checks</td></tr>
+            <tr><th scope="row">Imports &amp; exports</th><td>Opens <code>.docx</code>, <code>.doc</code>, <code>.odt</code>, <code>.pdf</code>, <code>.md</code>, and <code>.txt</code> (never modifies originals); exports EPUB 3, KDP paperback print PDF &amp; HTML, author-site web page, and delivery ZIP</td></tr>
+            <tr><th scope="row">On-disk storage</th><td>Preferences, sample book, and default exports in <code>Documents\Tynkr Inkpress</code>; per-book layout settings in a <code>.inkpress.json</code> sidecar next to each manuscript</td></tr>
+            <tr><th scope="row">Network &amp; runtime</th><td>No accounts, telemetry, or analytics sent to us; downloads remote web-linked images during print PDF export only (use local images to avoid); uses Microsoft Edge WebView2 (with SmartScreen) and Edge or Chrome for print PDF export</td></tr>
+            <tr><th scope="row">Encryption</th><td>Not encrypted — ordinary files protected by your Windows account (uninstalling leaves files intact)</td></tr>
+            <tr><th scope="row">Purchase model</th><td>Pay-once model (one-time purchase with all editions, font pairings, borders, and export formats included); no subscription or in-app upgrades</td></tr>
+            <tr><th scope="row">Distribution &amp; status</th><td>In development — coming soon exclusively through the Microsoft Store</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
@@ -280,11 +447,13 @@
     </div>
   </section>
 
+</main>
+
   <div class="wrap">
-    <div class="foot">
+    <footer class="foot">
       <span class="fb"><img data-appfb="tools" src="/assets/tynkr-tools-512.png" alt="" width="512" height="512">TYNKR TOOLS &amp; CO · BUILT BY JOSH STUDIO</span>
       <span>YOUR DATA · YOUR MACHINE · YOUR BUSINESS</span><span><a href="/privacy/">PRIVACY</a> · <a href="/terms/">TERMS</a></span><span style="flex-basis:100%;opacity:.8;">Amazon, Kindle and KDP are trademarks of Amazon.com, Inc. or its affiliates. Tynkr Inkpress is not affiliated with or endorsed by Amazon.</span>
-    </div>
+    </footer>
     <nav aria-label="More from Built by Josh Studio" class="studio-links">
       <span>More from the studio:</span>
       <a href="https://builtbyjoshstudio.com/">Built by Josh Studio</a>
@@ -295,8 +464,6 @@
       <a href="https://littleacrelearning.com/">Little Acre Learning</a>
     </nav>
   </div>
-
-</main>
 
 <script src="/js/shots.js" defer></script>
 <script>

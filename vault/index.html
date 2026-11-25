@@ -12,17 +12,19 @@
 </script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tynkr Vault — Local-First Second Brain OS for Windows</title>
-<meta name="description" content="Notes in plain Markdown files you own, with tasks and weekly reviews built in. Search finds a note by its title, typos and all, or by the words inside it. Local-first Windows app — no cloud, no accounts, no subscription.">
+<meta name="description" content="Notes in plain Markdown files you own, with tasks, weekly reviews, and typo-tolerant search. Local-first Windows app — no cloud or subscription.">
 <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://tynkr.builtbyjoshstudio.com/vault/">
 <meta property="og:title" content="Tynkr Vault — Local-First Second Brain OS for Windows">
-<meta property="og:description" content="Notes in plain Markdown files you own, with tasks and weekly reviews built in. Search finds a note by its title, typos and all, or by the words inside it. Local-first Windows app — no cloud, no accounts, no subscription.">
+<meta property="og:description" content="Notes in plain Markdown files you own, with tasks, weekly reviews, and typo-tolerant search. Local-first Windows app — no cloud or subscription.">
 <meta property="og:image" content="https://tynkr.builtbyjoshstudio.com/assets/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Tynkr Tools & Co — Your data. Your machine. Your business.">
+<meta property="og:image:alt" content="Tynkr Vault — Local-first Markdown notes and second brain desktop app for Windows.">
 <meta property="og:site_name" content="Tynkr Tools & Co">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tynkr Vault — Local-First Second Brain OS for Windows">
+<meta name="twitter:description" content="Notes in plain Markdown files you own, with tasks, weekly reviews, and typo-tolerant search. Local-first Windows app — no cloud or subscription.">
 <meta name="twitter:image" content="https://tynkr.builtbyjoshstudio.com/assets/og-card.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -34,9 +36,150 @@
 <link rel="stylesheet" href="/css/tokens.css">
 <link rel="stylesheet" href="/css/components.css">
 <link rel="stylesheet" href="/css/tynkr.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tynkr Vault","operatingSystem":"Windows","applicationCategory":"BusinessApplication","description":"Notes in plain Markdown files you own, with tasks and weekly reviews built in. Search finds a note by its title, typos and all, or by the words inside it. Local-first Windows app — no cloud, no accounts, no subscription.","url":"https://tynkr.builtbyjoshstudio.com/vault/","publisher":{"@type":"Organization","@id":"https://builtbyjoshstudio.com/#organization","name":"Built by Josh Studio LLC"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are my notes stored in a database?","acceptedAnswer":{"@type":"Answer","text":"No. Your notes are plain Markdown files in a folder you choose. Vault keeps a local search index for speed, but the files themselves are the source of truth — readable by any editor. If you turn on encryption, the files are encrypted on disk and Vault unlocks them with your password."}},{"@type":"Question","name":"Can I use Vault with an existing folder of Markdown files?","acceptedAnswer":{"@type":"Answer","text":"Yes — import them. Choose the .md files you want and Vault copies each one into your vault as a note, titled with its file name. Your original files aren’t moved or changed."}},{"@type":"Question","name":"How do I sync notes between machines?","acceptedAnswer":{"@type":"Answer","text":"However you like — the vault is just a folder, so any file sync you already trust works. Vault itself never syncs anything and never sends your notes anywhere."}},{"@type":"Question","name":"Is there a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. Vault is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. No account, no recurring billing."}},{"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online."}}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tynkr Tools & Co","item":"https://tynkr.builtbyjoshstudio.com/"},{"@type":"ListItem","position":2,"name":"Tynkr Vault","item":"https://tynkr.builtbyjoshstudio.com/vault/"}]}</script></head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://builtbyjoshstudio.com/#organization",
+      "name": "Built by Josh Studio LLC",
+      "legalName": "Built by Josh Studio LLC",
+      "url": "https://builtbyjoshstudio.com/",
+      "email": "mailto:support@builtbyjoshstudio.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tynkr.builtbyjoshstudio.com/assets/tynkr-tools-512.png",
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://tynkr.builtbyjoshstudio.com/#website",
+      "name": "Tynkr Tools & Co",
+      "url": "https://tynkr.builtbyjoshstudio.com/",
+      "description": "Five local-first desktop apps for Windows — Ledger, Vault, Hearth, Forge, and Inkpress. Ordinary files on your PC; no cloud, accounts, or fees.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://builtbyjoshstudio.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Tynkr Tools & Co",
+          "item": "https://tynkr.builtbyjoshstudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tynkr Vault",
+          "item": "https://tynkr.builtbyjoshstudio.com/vault/"
+        }
+      ],
+      "@id": "https://tynkr.builtbyjoshstudio.com/vault/#breadcrumb"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://tynkr.builtbyjoshstudio.com/vault/#webpage",
+      "url": "https://tynkr.builtbyjoshstudio.com/vault/",
+      "name": "Tynkr Vault — Local-First Second Brain OS for Windows",
+      "description": "Notes in plain Markdown files you own, with tasks, weekly reviews, and typo-tolerant search. Local-first Windows app — no cloud or subscription.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/vault/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/vault/#app"
+      },
+      "primaryImageOfPage": "https://tynkr.builtbyjoshstudio.com/assets/og-card.png"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://tynkr.builtbyjoshstudio.com/vault/#app",
+      "name": "Tynkr Vault",
+      "operatingSystem": "Windows",
+      "applicationCategory": "BusinessApplication",
+      "description": "Notes in plain Markdown files you own, with tasks, weekly reviews, and typo-tolerant search. Local-first Windows app — no cloud or subscription.",
+      "url": "https://tynkr.builtbyjoshstudio.com/vault/",
+      "image": "https://tynkr.builtbyjoshstudio.com/assets/tynkr-vault-300.png",
+      "screenshot": [
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/vault-01-all-notes-library.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/vault-02-markdown-editor.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/vault-04-tasks.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/vault-08-all-notes-library-dark.png"
+      ],
+      "featureList": [
+        "Plain Markdown (.md) notes stored in your own folder",
+        "Built-in tasks, daily notes, templates, and tags",
+        "Typo-tolerant title search and full-text search",
+        "Backlinks from [[wiki links]] and weekly reviews",
+        "Quick capture shortcut (Ctrl+Shift+Space) and optional password encryption"
+      ],
+      "publisher": {
+        "@id": "https://builtbyjoshstudio.com/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/#website"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are my notes stored in a database?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Your notes are plain Markdown files in a folder you choose. Vault keeps a local search index for speed, but the files themselves are the source of truth — readable by any editor. If you turn on encryption, the files are encrypted on disk and Vault unlocks them with your password."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Vault with an existing folder of Markdown files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — import them. Choose the .md files you want and Vault copies each one into your vault as a note, titled with its file name. Your original files aren’t moved or changed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I sync notes between machines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "However you like — the vault is just a folder, so any file sync you already trust works. Vault itself never syncs anything and never sends your notes anywhere."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Vault is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. No account, no recurring billing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online."
+          }
+        }
+      ],
+      "@id": "https://tynkr.builtbyjoshstudio.com/vault/#faq"
+    }
+  ]
+}
+</script>
+</head>
 <body data-app="vault">
 
 <!-- ===== TOP BAR ===== -->
@@ -202,6 +345,21 @@
 ├─ versions/            <i>· earlier copies of notes</i>
 └─ attachments/</div>
       </div>
+      <div class="spec-wrap reveal">
+        <table class="spec-table spec-table--kv">
+          <caption>Tynkr Vault — At a glance</caption>
+          <tbody>
+            <tr><th scope="row">Platform</th><td>Windows (desktop)</td></tr>
+            <tr><th scope="row">Focus</th><td>Second Brain OS — Markdown notes, tasks, templates, tags, backlinks from <code>[[wiki links]]</code>, daily notes, weekly reviews</td></tr>
+            <tr><th scope="row">Search &amp; capture</th><td>Typo-tolerant title search, word-start full-text search (local index), and <code>Ctrl+Shift+Space</code> quick capture</td></tr>
+            <tr><th scope="row">On-disk storage</th><td>Plain Markdown (<code>.md</code>) files in <code>notes/</code> plus small JSON metadata files, <code>templates/</code>, <code>versions/</code>, and <code>attachments/</code> in a folder you choose</td></tr>
+            <tr><th scope="row">Network activity</th><td>100% offline — makes no network calls of its own; no accounts, cloud, or telemetry</td></tr>
+            <tr><th scope="row">Encryption</th><td>Optional password encryption on disk (Vault unlocks files locally with your password)</td></tr>
+            <tr><th scope="row">Purchase model</th><td>Pay-once model (one-time purchase); free bug fixes; major version upgrades separate; no subscription</td></tr>
+            <tr><th scope="row">Distribution &amp; status</th><td>In development — coming soon exclusively through the Microsoft Store</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
@@ -288,11 +446,13 @@
     </div>
   </section>
 
+</main>
+
   <div class="wrap">
-    <div class="foot">
+    <footer class="foot">
       <span class="fb"><img data-appfb="tools" src="/assets/tynkr-tools-512.png" alt="" width="512" height="512">TYNKR TOOLS &amp; CO · BUILT BY JOSH STUDIO</span>
       <span>YOUR DATA · YOUR MACHINE · YOUR BUSINESS</span><span><a href="/privacy/">PRIVACY</a> · <a href="/terms/">TERMS</a></span>
-    </div>
+    </footer>
     <nav aria-label="More from Built by Josh Studio" class="studio-links">
       <span>More from the studio:</span>
       <a href="https://builtbyjoshstudio.com/">Built by Josh Studio</a>
@@ -303,8 +463,6 @@
       <a href="https://littleacrelearning.com/">Little Acre Learning</a>
     </nav>
   </div>
-
-</main>
 
 <script src="/js/shots.js" defer></script>
 <script>

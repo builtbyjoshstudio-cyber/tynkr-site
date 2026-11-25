@@ -1,28 +1,60 @@
 # Tynkr Tools & Co — Desktop App Suite
 
-> Five privacy-first desktop apps for Windows from Built by Josh Studio LLC, under its Tynkr Tools & Co brand. Everything lives in ordinary files on your own machine — no cloud, no accounts, no subscriptions. Buy once, own forever. The suite is in development; visitors can get notified at launch.
+> Five local-first desktop apps for Windows — Ledger, Vault, Hearth, Forge, and Inkpress. Ordinary files on your PC; no cloud, accounts, or fees.
 
-Tynkr is the desktop software line from Built by Josh Studio (a one-person creative studio in Kansas, incorporated as Built by Josh Studio LLC in 2026; Tynkr Tools & Co is its productivity brand). Each app stores your work in files on your machine — open them, move them, or back them up yourself. None of the apps send us your data, and there are no accounts, telemetry or analytics. Tynkr Ledger, Vault, Hearth and Forge make no network calls of their own; Tynkr Inkpress makes no network calls of its own except downloading remote images linked by a manuscript during print PDF export (and uses Windows WebView2 and Microsoft Edge or Google Chrome for PDF export). Microsoft handles the purchase, license, and updates through the Microsoft Store. All five apps share the same contract: your files on your machine, one-time purchase, no telemetry, no accounts. The apps are not yet released — the marketing site collects launch notifications (via the Tynkr Tools & Co Substack).
+Tynkr is the desktop software line from Built by Josh Studio LLC, under its Tynkr Tools & Co brand. Each app stores your work in ordinary files on your own machine — open them, move them, or back them up yourself. None of the apps send us your data, and there are no accounts, telemetry, or analytics. The suite is in development and coming soon to the Microsoft Store; visitors can request launch notifications on Substack.
 
-This site (tynkr.builtbyjoshstudio.com) covers the desktop apps only. The broader Built by Josh Studio catalog — Notion OS templates, Excel/Google Sheets workbooks, guided print planners, zodiac art, books, and the cookbook — lives at builtbyjoshstudio.com (index: https://builtbyjoshstudio.com/llms.txt). Fuller file for this site: https://tynkr.builtbyjoshstudio.com/llms-full.txt.
+## About & Authority
+
+- **Publisher:** Built by Josh Studio LLC (Kansas Business ID 10076138, Kansas), publishing desktop applications under the **Tynkr Tools & Co** brand.
+- **Canonical Site:** https://tynkr.builtbyjoshstudio.com/
+- **Parent Catalog:** https://builtbyjoshstudio.com/ ([llms.txt](https://builtbyjoshstudio.com/llms.txt))
+- **Support Email:** support@builtbyjoshstudio.com
+- **Pay-Once Model:** Every app is a one-time purchase through the Microsoft Store when it launches. Bug fixes are always free; major version upgrades are a separate purchase. There are no subscriptions, no accounts, and no recurring billing.
+- **Architecture & Network Distinction:**
+  - **Tynkr Ledger, Vault, Hearth, and Forge:** 100% offline Windows desktop apps that make zero network calls of their own (Microsoft handles Store purchase, licensing, and updates). Data is stored in ordinary JSON / Markdown files in a folder you choose, with optional password encryption on disk.
+  - **Tynkr Inkpress:** Windows 10 version 2004 (build 19041) or later (x64) desktop app with no account, telemetry, or analytics sent to us. Its own code makes no network calls except downloading remote web-linked images during print PDF export (use local images to avoid any connection); it uses Microsoft Edge WebView2 (which includes SmartScreen) and Edge or Chrome for print PDF export. Files in `Documents\Tynkr Inkpress` and per-book `.inkpress.json` sidecars are not encrypted (protected by your Windows account).
+
+This site (`tynkr.builtbyjoshstudio.com`) covers the desktop apps only. Broader studio products (Notion OS templates, Excel/Google Sheets workbooks, guided print planners, zodiac art, books, and cookbook) live at `builtbyjoshstudio.com`. Summary index: https://tynkr.builtbyjoshstudio.com/llms.txt.
+
+## 5-App Comparison Matrix
+
+| App | Focus | On-disk format | Network activity | Encryption | Model & status |
+| --- | --- | --- | --- | --- | --- |
+| Tynkr Ledger (`/ledger/`) | Personal Finance OS | Yearly & monthly JSON + `attachments/` in your chosen folder | 100% offline; zero network calls of its own | Optional password encryption on disk | Pay-once · Coming soon (Microsoft Store) |
+| Tynkr Vault (`/vault/`) | Second Brain OS | Plain Markdown (`.md`) notes + JSON metadata & local search index | 100% offline; zero network calls of its own | Optional password encryption on disk | Pay-once · Coming soon (Microsoft Store) |
+| Tynkr Hearth (`/hearth/`) | Homebuyer OS | 8 plain JSON files + `property_images/` (`.zip` & CSV export) | 100% offline; zero network calls of its own | Optional password encryption on disk | Pay-once · Coming soon (Microsoft Store) |
+| Tynkr Forge (`/forge/`) | Small Business OS | Flat JSON files per module + `vault/` folder for receipts & docs | 100% offline; zero network calls of its own | Optional password encryption on disk | Pay-once · Coming soon (Microsoft Store) |
+| Tynkr Inkpress (`/inkpress/`) | Book Formatting | Reads `.docx`/`.doc`/`.odt`/`.pdf`/`.md`/`.txt`; writes EPUB 3, print PDF, HTML, ZIP & `.inkpress.json` | Downloads remote web-linked images during print PDF export only; uses WebView2 & Edge/Chrome | Not encrypted (protected by Windows account) | Pay-once · Coming soon (Microsoft Store) |
 
 ## The apps
 
-- [Tynkr Ledger — Personal Finance OS](https://tynkr.builtbyjoshstudio.com/ledger/): Personal finance on your own disk — transactions, budgets, bills, debt payoff, and net worth. Local-first Windows app; no cloud, no accounts, no subscription.
-- [Tynkr Vault — Second Brain OS](https://tynkr.builtbyjoshstudio.com/vault/): Notes in plain Markdown files you own, with tasks and weekly reviews built in, and search that finds a note by its title (typo-tolerant) or by the words inside it. Local-first Windows app; no cloud, no accounts, no subscription.
-- [Tynkr Hearth — Homebuyer OS](https://tynkr.builtbyjoshstudio.com/hearth/): The whole home purchase mapped — mortgage math, down-payment planning, cash-to-close, roadmap, and document checklist. Local-first Windows app; no cloud, no accounts.
-- [Tynkr Forge — Small Business OS](https://tynkr.builtbyjoshstudio.com/forge/): Inventory, orders and invoicing for a small shop, with no monthly fee. Features, in order: inventory with stock levels and reorder targets, vendors and purchase orders, customer CRM and sales pipeline, proposals, PDF invoices, projects and time tracking, financial dashboard, contracts, expenses with receipts, and reminders. One local-first Windows app — no cloud, no accounts, no subscription.
-- [Tynkr Inkpress — Book Formatting](https://tynkr.builtbyjoshstudio.com/inkpress/): Turn your manuscript into an EPUB 3 ebook, a print PDF at KDP paperback trim sizes and a web page for your author site. Choose a clean, styled or framed look (Ashveil, Systemfall, Sootline), check live print and ebook previews and preflight checks, and keep your work on your own PC — no account, no telemetry, no subscription.
+- [Tynkr Ledger — Personal Finance OS](https://tynkr.builtbyjoshstudio.com/ledger/): Personal finance on your own disk: transactions, budgets, bills, debt payoff, net worth. Local-first Windows app — no cloud, no accounts, no subscription.
+- [Tynkr Vault — Second Brain OS](https://tynkr.builtbyjoshstudio.com/vault/): Notes in plain Markdown files you own, with tasks, weekly reviews, and typo-tolerant search. Local-first Windows app — no cloud or subscription.
+- [Tynkr Hearth — Homebuyer OS](https://tynkr.builtbyjoshstudio.com/hearth/): Map your home purchase on your own PC: mortgage math, loan comparison, cash-to-close, roadmap, and document checklist. Local-first Windows app.
+- [Tynkr Forge — Small Business OS](https://tynkr.builtbyjoshstudio.com/forge/): Inventory, orders and invoicing for a small shop, with no monthly fee — one local-first Windows app. No cloud, no accounts, no subscription. Features, in order: inventory with stock levels and reorder targets, vendors and purchase orders, customer CRM and sales pipeline, proposals, PDF invoices, projects and time tracking, financial dashboard, contracts, expenses with receipts, and reminders.
+- [Tynkr Inkpress — Book Formatting](https://tynkr.builtbyjoshstudio.com/inkpress/): Format manuscripts into EPUB 3 ebooks, KDP paperback print PDFs, and author-site web pages with live previews. Local-first Windows desktop app with Clean, Styled, and three framed editions (Ashveil, Systemfall, Sootline).
+
+## Suite FAQs
+
+Q: How does pricing work across the Tynkr desktop apps?
+A: Every Tynkr app uses a pay-once model — a one-time purchase per app through the Microsoft Store when it launches. Bug fixes are always free, major version upgrades are a separate purchase, and there are no subscriptions, no accounts, and no in-app upgrades.
+Q: Where will the Tynkr apps be available, and when do they launch?
+A: All five Tynkr apps are in development and coming soon for Windows. They will be certified, signed, sold, and delivered only through the Microsoft Store, with updates delivered automatically through the Store. You can join the Tynkr Tools & Co Substack list below for launch notifications.
+Q: Do the Tynkr apps work offline or send data over the internet?
+A: None of the five apps have accounts, telemetry, or analytics, and none send your data to Built by Josh Studio LLC. Tynkr Ledger, Vault, Hearth, and Forge make no network calls of their own and work completely offline. Tynkr Inkpress makes one exception: during print PDF export, it downloads remote images linked from the web in your manuscript (use local images on your PC to avoid any connection); Inkpress also uses Microsoft Edge WebView2 (which includes SmartScreen) and Microsoft Edge or Google Chrome for print PDF export.
+Q: Where are my files stored, and does Tynkr encrypt them?
+A: Every Tynkr app stores your work in ordinary files on your own Windows PC — JSON, Markdown, EPUB, PDF, and HTML — and uninstalling an app leaves your data in place. Tynkr Ledger, Vault, Hearth, and Forge save in a folder you choose and offer optional password protection that encrypts your files on disk. Tynkr Inkpress saves preferences and default exports in Documents\Tynkr Inkpress plus a .inkpress.json sidecar next to each manuscript without encrypting them; those files are protected by your Windows account.
 
 ## Site pages
 
-- [Tynkr desktop apps — home](https://tynkr.builtbyjoshstudio.com/): The suite overview and launch-notification signup.
+- [Tynkr desktop apps — home](https://tynkr.builtbyjoshstudio.com/): Suite overview, comparison table, Suite FAQ, and launch-notification signup.
 - [Privacy Policy](https://tynkr.builtbyjoshstudio.com/privacy/): The apps collect nothing; this website runs standard analytics only; launch-list emails live on Substack; Etsy, Lemon Squeezy and the Microsoft Store handle their own checkout data; the Microsoft Store shares no buyer names or emails with us.
 - [Website Terms of Use](https://tynkr.builtbyjoshstudio.com/terms/): Terms for this marketing site (the apps ship with their own EULA).
 
 ## Beyond the suite
 
-- [Built by Josh Studio](https://builtbyjoshstudio.com/): The parent studio — Notion templates, spreadsheet workbooks, guided planners, zodiac art, books, cookbook.
+- [Built by Josh Studio](https://builtbyjoshstudio.com/): Parent studio — Notion templates, spreadsheet workbooks, guided planners, zodiac art, books, cookbook.
 - [Kitchen & cooking tools](https://cooking.builtbyjoshstudio.com/tools/): Free browser calculators for the kitchen.
 - [Money & business tools](https://tools.builtbyjoshstudio.com/money/): Free browser calculators for personal finance and small business.
 - [Tabletop & RPG tools](https://writing.builtbyjoshstudio.com/tabletop/): Free browser tools for game night — initiative tracker, dice roller, session notes, generators, wargame scorer.
@@ -32,13 +64,12 @@ This site (tynkr.builtbyjoshstudio.com) covers the desktop apps only. The broade
 
 Email: support@builtbyjoshstudio.com
 
-
 ## App details and FAQs
 
 ### Tynkr Ledger
 URL: https://tynkr.builtbyjoshstudio.com/ledger/
 What it is: Personal finance on your own disk: transactions, budgets, bills, debt payoff, net worth. Local-first Windows app — no cloud, no accounts, no subscription.
-Platform: Windows · category: FinanceApplication · status: in development (not yet released); one-time purchase when it ships.
+Platform: Windows · category: FinanceApplication · status: in development (not yet released); pay-once model (one-time purchase when it ships).
 Q: Does Ledger connect to my bank?
 A: No. Ledger never asks for bank credentials and makes no network requests to financial institutions. You import transactions by downloading a CSV, OFX or QFX file from your bank’s website and opening it in Ledger.
 Q: Where is my financial data stored?
@@ -52,8 +83,8 @@ A: It was never locked in. Your data is already JSON on your disk (or encrypted 
 
 ### Tynkr Vault
 URL: https://tynkr.builtbyjoshstudio.com/vault/
-What it is: Notes in plain Markdown files you own, with tasks and weekly reviews built in. Search finds a note by its title, typos and all, or by the words inside it. Local-first Windows app — no cloud, no accounts, no subscription.
-Platform: Windows · category: BusinessApplication · status: in development (not yet released); one-time purchase when it ships.
+What it is: Notes in plain Markdown files you own, with tasks, weekly reviews, and typo-tolerant search. Local-first Windows app — no cloud or subscription.
+Platform: Windows · category: BusinessApplication · status: in development (not yet released); pay-once model (one-time purchase when it ships).
 Q: Are my notes stored in a database?
 A: No. Your notes are plain Markdown files in a folder you choose. Vault keeps a local search index for speed, but the files themselves are the source of truth — readable by any editor. If you turn on encryption, the files are encrypted on disk and Vault unlocks them with your password.
 Q: Can I use Vault with an existing folder of Markdown files?
@@ -67,8 +98,8 @@ A: Yes. The app needs no internet connection and makes no network calls of its o
 
 ### Tynkr Hearth
 URL: https://tynkr.builtbyjoshstudio.com/hearth/
-What it is: The whole home purchase, mapped: mortgage math, down payment planning, cash-to-close, roadmap, document checklist. Local-first Windows app — no cloud, no accounts.
-Platform: Windows · category: BusinessApplication · status: in development (not yet released); one-time purchase when it ships.
+What it is: Map your home purchase on your own PC: mortgage math, loan comparison, cash-to-close, roadmap, and document checklist. Local-first Windows app.
+Platform: Windows · category: BusinessApplication · status: in development (not yet released); pay-once model (one-time purchase when it ships).
 Q: Is Hearth a mortgage lender or broker?
 A: No. Hearth is planning software. It doesn’t sell loans, take referral fees, or send your information to lenders — it has no way to, since nothing leaves your machine.
 Q: Where do my documents live?
@@ -82,9 +113,9 @@ A: It stays yours. Your JSON files and property photos stay in your data folder 
 
 ### Tynkr Forge
 URL: https://tynkr.builtbyjoshstudio.com/forge/
-What it is: Inventory, orders and invoicing for a small shop, with no monthly fee. One local-first Windows app — no cloud, no accounts, no subscription.
+What it is: Inventory, orders and invoicing for a small shop, with no monthly fee — one local-first Windows app. No cloud, no accounts, no subscription.
 Features, in order: inventory with stock levels and reorder targets, vendors and purchase orders, customer CRM and sales pipeline, proposals, PDF invoices, projects and time tracking, financial dashboard, contracts, expenses with receipts, and reminders.
-Platform: Windows · category: BusinessApplication · status: in development (not yet released); one-time purchase when it ships.
+Platform: Windows · category: BusinessApplication · status: in development (not yet released); pay-once model (one-time purchase when it ships).
 Q: Can Forge send invoices by email?
 A: Forge generates the invoice as a PDF you send however you already email — it doesn’t send mail itself or route your client data through any server.
 Q: Where does my business data live?
@@ -98,8 +129,8 @@ A: Yes. The app needs no internet connection and makes no network calls of its o
 
 ### Tynkr Inkpress
 URL: https://tynkr.builtbyjoshstudio.com/inkpress/
-What it is: Turn your manuscript into an EPUB 3 ebook, a print PDF at KDP paperback trim sizes and a web page for your author site. Choose a clean, styled or framed look, check it in a live page preview, and keep your work on your own PC.
-Platform: Windows 10 version 2004 (build 19041) or later (x64) · category: DesignApplication · status: coming soon to the Microsoft Store; one-time purchase when it ships.
+What it is: Format manuscripts into EPUB 3 ebooks, KDP paperback print PDFs, and author-site web pages with live previews. Local-first Windows desktop app.
+Platform: Windows 10 version 2004 (build 19041) or later (x64) · category: DesignApplication · status: coming soon to the Microsoft Store; pay-once model (one-time purchase when it ships).
 Q: Which manuscript formats can Inkpress open, and does it change my file?
 A: Inkpress opens Word (.docx or .doc), Google Docs (.odt or .docx download), PDF, Markdown and plain-text files. Your original manuscript is never modified — when you save changes in your usual editor, Inkpress reloads the manuscript automatically, and saves each book's layout settings in a .inkpress.json sidecar file next to it.
 Q: How does Inkpress handle privacy, internet access and SmartScreen?
@@ -117,5 +148,5 @@ A: No. Tynkr Inkpress is coming soon to the Microsoft Store as a one-time purcha
 
 - On your machine: Ledger, Vault, Hearth and Forge keep flat files in a folder you choose; Inkpress keeps preferences and default exports in Documents\Tynkr Inkpress plus a .inkpress.json sidecar next to each manuscript.
 - No cloud, no accounts, no subscriptions, no telemetry: none of the apps send us your data. Ledger, Vault, Hearth and Forge make no network calls of their own; Inkpress only downloads remote web images linked in a manuscript during print PDF export (plus WebView2 diagnostic data/SmartScreen and Edge or Chrome for PDF export). Microsoft handles the purchase, license, and updates through the Microsoft Store.
-- One-time purchase per app when released; every app will be certified, signed, and delivered by the Microsoft Store, with updates through the Store automatically.
+- Pay-once model (one-time purchase per app when released); every app will be certified, signed, and delivered by the Microsoft Store, with updates through the Store automatically.
 - Publisher: Built by Josh Studio LLC (Tynkr Tools & Co brand); support: support@builtbyjoshstudio.com.

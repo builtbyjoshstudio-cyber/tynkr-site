@@ -20,9 +20,11 @@
 <meta property="og:image" content="https://tynkr.builtbyjoshstudio.com/assets/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Tynkr Tools & Co — Your data. Your machine. Your business.">
+<meta property="og:image:alt" content="Tynkr Forge — Local-first small business inventory, CRM, and invoicing app for Windows.">
 <meta property="og:site_name" content="Tynkr Tools & Co">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tynkr Forge — Local-First Small Business OS for Windows">
+<meta name="twitter:description" content="Inventory, orders and invoicing for a small shop, with no monthly fee — one local-first Windows app. No cloud, no accounts, no subscription.">
 <meta name="twitter:image" content="https://tynkr.builtbyjoshstudio.com/assets/og-card.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -34,9 +36,152 @@
 <link rel="stylesheet" href="/css/tokens.css">
 <link rel="stylesheet" href="/css/components.css">
 <link rel="stylesheet" href="/css/tynkr.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tynkr Forge","operatingSystem":"Windows","applicationCategory":"BusinessApplication","description":"Inventory, orders and invoicing for a small shop, with no monthly fee — one local-first Windows app. No cloud, no accounts, no subscription.","url":"https://tynkr.builtbyjoshstudio.com/forge/","publisher":{"@type":"Organization","@id":"https://builtbyjoshstudio.com/#organization","name":"Built by Josh Studio LLC"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can Forge send invoices by email?","acceptedAnswer":{"@type":"Answer","text":"Forge generates the invoice as a PDF you send however you already email — it doesn’t send mail itself or route your client data through any server."}},{"@type":"Question","name":"Where does my business data live?","acceptedAnswer":{"@type":"Answer","text":"In flat JSON files on your disk — one per module — plus a vault folder where receipts and documents sit as ordinary files. Back it up with whatever you already use."}},{"@type":"Question","name":"Can multiple people use it?","acceptedAnswer":{"@type":"Answer","text":"Forge is built for solo owners and works on one machine at a time. Because the data is flat files, you can share the folder between machines with your own sync — but there’s no multi-user server, by design."}},{"@type":"Question","name":"Is there a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. Forge is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. No account, no recurring billing."}},{"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online."}}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tynkr Tools & Co","item":"https://tynkr.builtbyjoshstudio.com/"},{"@type":"ListItem","position":2,"name":"Tynkr Forge","item":"https://tynkr.builtbyjoshstudio.com/forge/"}]}</script></head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://builtbyjoshstudio.com/#organization",
+      "name": "Built by Josh Studio LLC",
+      "legalName": "Built by Josh Studio LLC",
+      "url": "https://builtbyjoshstudio.com/",
+      "email": "mailto:support@builtbyjoshstudio.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tynkr.builtbyjoshstudio.com/assets/tynkr-tools-512.png",
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://tynkr.builtbyjoshstudio.com/#website",
+      "name": "Tynkr Tools & Co",
+      "url": "https://tynkr.builtbyjoshstudio.com/",
+      "description": "Five local-first desktop apps for Windows — Ledger, Vault, Hearth, Forge, and Inkpress. Ordinary files on your PC; no cloud, accounts, or fees.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://builtbyjoshstudio.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Tynkr Tools & Co",
+          "item": "https://tynkr.builtbyjoshstudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tynkr Forge",
+          "item": "https://tynkr.builtbyjoshstudio.com/forge/"
+        }
+      ],
+      "@id": "https://tynkr.builtbyjoshstudio.com/forge/#breadcrumb"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://tynkr.builtbyjoshstudio.com/forge/#webpage",
+      "url": "https://tynkr.builtbyjoshstudio.com/forge/",
+      "name": "Tynkr Forge — Local-First Small Business OS for Windows",
+      "description": "Inventory, orders and invoicing for a small shop, with no monthly fee — one local-first Windows app. No cloud, no accounts, no subscription.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/forge/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/forge/#app"
+      },
+      "primaryImageOfPage": "https://tynkr.builtbyjoshstudio.com/assets/og-card.png"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://tynkr.builtbyjoshstudio.com/forge/#app",
+      "name": "Tynkr Forge",
+      "operatingSystem": "Windows",
+      "applicationCategory": "BusinessApplication",
+      "description": "Inventory, orders and invoicing for a small shop, with no monthly fee — one local-first Windows app. No cloud, no accounts, no subscription.",
+      "url": "https://tynkr.builtbyjoshstudio.com/forge/",
+      "image": "https://tynkr.builtbyjoshstudio.com/assets/tynkr-forge-300.png",
+      "screenshot": [
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/forge-01-inventory.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/forge-09-inventory-dark.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/forge-07-purchase-orders.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/forge-02-dashboard.png",
+        "https://tynkr.builtbyjoshstudio.com/assets/screens/forge-06-invoices.png"
+      ],
+      "featureList": [
+        "Inventory management with stock levels and reorder targets",
+        "Vendors and purchase orders",
+        "Customer CRM, sales pipeline, proposals, and contracts",
+        "PDF invoices and recurring invoice templates",
+        "Projects, time tracking, financial dashboard, expenses with receipts, and reminders",
+        "Multiple businesses in one app with optional password encryption"
+      ],
+      "publisher": {
+        "@id": "https://builtbyjoshstudio.com/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://tynkr.builtbyjoshstudio.com/#website"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can Forge send invoices by email?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Forge generates the invoice as a PDF you send however you already email — it doesn’t send mail itself or route your client data through any server."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where does my business data live?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In flat JSON files on your disk — one per module — plus a vault folder where receipts and documents sit as ordinary files. Back it up with whatever you already use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can multiple people use it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Forge is built for solo owners and works on one machine at a time. Because the data is flat files, you can share the folder between machines with your own sync — but there’s no multi-user server, by design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Forge is a one-time purchase when it launches. Bug fixes are always free; major version upgrades are a separate purchase. No account, no recurring billing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The app needs no internet connection and makes no network calls of its own. Updates arrive through the Microsoft Store when you're online."
+          }
+        }
+      ],
+      "@id": "https://tynkr.builtbyjoshstudio.com/forge/#faq"
+    }
+  ]
+}
+</script>
+</head>
 <body data-app="forge">
 
 <!-- ===== TOP BAR ===== -->
@@ -214,6 +359,21 @@
 └─ vault/
    └─ expense/…  <i>· receipts, as plain files</i></div>
       </div>
+      <div class="spec-wrap reveal">
+        <table class="spec-table spec-table--kv">
+          <caption>Tynkr Forge — At a glance</caption>
+          <tbody>
+            <tr><th scope="row">Platform</th><td>Windows (desktop)</td></tr>
+            <tr><th scope="row">Focus</th><td>Small Business OS — inventory (stock levels &amp; reorder targets), vendors &amp; purchase orders, CRM &amp; pipeline, proposals, PDF invoices, projects &amp; time tracking, financial dashboard, contracts, expenses &amp; receipts, reminders</td></tr>
+            <tr><th scope="row">Scope</th><td>Built for solo owners (several businesses in one app; works on one machine at a time; generates PDF invoices and POs)</td></tr>
+            <tr><th scope="row">On-disk storage</th><td>Flat JSON files per module (26 files in all) plus a <code>vault/</code> folder for receipts and documents in a folder you choose</td></tr>
+            <tr><th scope="row">Network activity</th><td>100% offline — makes no network calls of its own; does not send email or route client data through servers</td></tr>
+            <tr><th scope="row">Encryption</th><td>Optional password encryption on disk (password and recovery key stay on your device)</td></tr>
+            <tr><th scope="row">Purchase model</th><td>Pay-once model (one-time purchase); free bug fixes; major version upgrades separate; no subscription</td></tr>
+            <tr><th scope="row">Distribution &amp; status</th><td>In development — coming soon exclusively through the Microsoft Store</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
@@ -300,11 +460,13 @@
     </div>
   </section>
 
+</main>
+
   <div class="wrap">
-    <div class="foot">
+    <footer class="foot">
       <span class="fb"><img data-appfb="tools" src="/assets/tynkr-tools-512.png" alt="" width="512" height="512">TYNKR TOOLS &amp; CO · BUILT BY JOSH STUDIO</span>
       <span>YOUR DATA · YOUR MACHINE · YOUR BUSINESS</span><span><a href="/privacy/">PRIVACY</a> · <a href="/terms/">TERMS</a></span><span style="flex-basis:100%;opacity:.8;">Tynkr apps are planning tools — not financial, tax, accounting, or legal advice. Verify figures with your own accountant.</span>
-    </div>
+    </footer>
     <nav aria-label="More from Built by Josh Studio" class="studio-links">
       <span>More from the studio:</span>
       <a href="https://builtbyjoshstudio.com/">Built by Josh Studio</a>
@@ -315,8 +477,6 @@
       <a href="https://littleacrelearning.com/">Little Acre Learning</a>
     </nav>
   </div>
-
-</main>
 
 <script src="/js/shots.js" defer></script>
 <script>
